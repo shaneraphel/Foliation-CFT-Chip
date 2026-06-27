@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "dos_broadening_eV": 0.162766,
+  "yield_strength_estimate_GPa": 1.953192,
+  "mapping": "\u03c3_y \u2248 k \u00b7 \u03c3_DOS (cocktail / lattice distortion)",
+  "message": "\u03c3_DOS=0.163 eV \u2192 \u03c3_y\u22482.0 GPa"
+}

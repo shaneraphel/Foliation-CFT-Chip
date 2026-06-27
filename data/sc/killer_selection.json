@@ -1,0 +1,785 @@
+{
+  "chemistry_winner": {
+    "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoS2_JVASP-664.cif",
+    "filename": "MoS2_JVASP-664.cif",
+    "formula": "MoS2",
+    "elements": [
+      "Mo",
+      "S"
+    ],
+    "killer_tm": [
+      "Mo"
+    ],
+    "n_atoms": 3,
+    "pseudo_ready": true
+  },
+  "pipeline_winner": {
+    "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoS2_JVASP-664.cif",
+    "filename": "MoS2_JVASP-664.cif",
+    "formula": "MoS2",
+    "elements": [
+      "Mo",
+      "S"
+    ],
+    "killer_tm": [
+      "Mo"
+    ],
+    "n_atoms": 3,
+    "pseudo_ready": true
+  },
+  "pool_size": 107,
+  "pseudo_ready_count": 52,
+  "pslibrary_elements": [
+    "Al",
+    "As",
+    "Au",
+    "B",
+    "C",
+    "C_3",
+    "Co",
+    "CorelUSPBE",
+    "Cr",
+    "Cu",
+    "Fe",
+    "Ge",
+    "H",
+    "HUSPBE",
+    "H_US",
+    "I",
+    "Li",
+    "Mg",
+    "N",
+    "Ni",
+    "O",
+    "O_US",
+    "Pb",
+    "Pt",
+    "Rh",
+    "Rhs",
+    "Si",
+    "Si_r",
+    "Ti",
+    "pb_s"
+  ],
+  "top10": [
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoS2_JVASP-664.cif",
+      "filename": "MoS2_JVASP-664.cif",
+      "formula": "MoS2",
+      "elements": [
+        "Mo",
+        "S"
+      ],
+      "killer_tm": [
+        "Mo"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoSe2_JVASP-60566.cif",
+      "filename": "MoSe2_JVASP-60566.cif",
+      "formula": "MoSe2",
+      "elements": [
+        "Mo",
+        "Se"
+      ],
+      "killer_tm": [
+        "Mo"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbO2_JVASP-31356.cif",
+      "filename": "NbO2_JVASP-31356.cif",
+      "formula": "NbO2",
+      "elements": [
+        "Nb",
+        "O"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbS2_JVASP-646.cif",
+      "filename": "NbS2_JVASP-646.cif",
+      "formula": "NbS2",
+      "elements": [
+        "Nb",
+        "S"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbSe2_JVASP-655.cif",
+      "filename": "NbSe2_JVASP-655.cif",
+      "formula": "NbSe2",
+      "elements": [
+        "Nb",
+        "Se"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TaS2_JVASP-5872.cif",
+      "filename": "TaS2_JVASP-5872.cif",
+      "formula": "TaS2",
+      "elements": [
+        "S",
+        "Ta"
+      ],
+      "killer_tm": [
+        "Ta"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TaSe2_JVASP-5956.cif",
+      "filename": "TaSe2_JVASP-5956.cif",
+      "formula": "TaSe2",
+      "elements": [
+        "Se",
+        "Ta"
+      ],
+      "killer_tm": [
+        "Ta"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiBr2_JVASP-6961.cif",
+      "filename": "TiBr2_JVASP-6961.cif",
+      "formula": "TiBr2",
+      "elements": [
+        "Br",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiCl2_JVASP-6754.cif",
+      "filename": "TiCl2_JVASP-6754.cif",
+      "formula": "TiCl2",
+      "elements": [
+        "Cl",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiO2_JVASP-5902.cif",
+      "filename": "TiO2_JVASP-5902.cif",
+      "formula": "TiO2",
+      "elements": [
+        "O",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    }
+  ],
+  "sweep_pool": [
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoS2_JVASP-664.cif",
+      "filename": "MoS2_JVASP-664.cif",
+      "formula": "MoS2",
+      "elements": [
+        "Mo",
+        "S"
+      ],
+      "killer_tm": [
+        "Mo"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/MoSe2_JVASP-60566.cif",
+      "filename": "MoSe2_JVASP-60566.cif",
+      "formula": "MoSe2",
+      "elements": [
+        "Mo",
+        "Se"
+      ],
+      "killer_tm": [
+        "Mo"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbO2_JVASP-31356.cif",
+      "filename": "NbO2_JVASP-31356.cif",
+      "formula": "NbO2",
+      "elements": [
+        "Nb",
+        "O"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbS2_JVASP-646.cif",
+      "filename": "NbS2_JVASP-646.cif",
+      "formula": "NbS2",
+      "elements": [
+        "Nb",
+        "S"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/NbSe2_JVASP-655.cif",
+      "filename": "NbSe2_JVASP-655.cif",
+      "formula": "NbSe2",
+      "elements": [
+        "Nb",
+        "Se"
+      ],
+      "killer_tm": [
+        "Nb"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TaS2_JVASP-5872.cif",
+      "filename": "TaS2_JVASP-5872.cif",
+      "formula": "TaS2",
+      "elements": [
+        "S",
+        "Ta"
+      ],
+      "killer_tm": [
+        "Ta"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TaSe2_JVASP-5956.cif",
+      "filename": "TaSe2_JVASP-5956.cif",
+      "formula": "TaSe2",
+      "elements": [
+        "Se",
+        "Ta"
+      ],
+      "killer_tm": [
+        "Ta"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiBr2_JVASP-6961.cif",
+      "filename": "TiBr2_JVASP-6961.cif",
+      "formula": "TiBr2",
+      "elements": [
+        "Br",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiCl2_JVASP-6754.cif",
+      "filename": "TiCl2_JVASP-6754.cif",
+      "formula": "TiCl2",
+      "elements": [
+        "Cl",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiO2_JVASP-5902.cif",
+      "filename": "TiO2_JVASP-5902.cif",
+      "formula": "TiO2",
+      "elements": [
+        "O",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiS2_JVASP-771.cif",
+      "filename": "TiS2_JVASP-771.cif",
+      "formula": "TiS2",
+      "elements": [
+        "S",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiSe2_JVASP-777.cif",
+      "filename": "TiSe2_JVASP-777.cif",
+      "formula": "TiSe2",
+      "elements": [
+        "Se",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiTe2_JVASP-780.cif",
+      "filename": "TiTe2_JVASP-780.cif",
+      "formula": "TiTe2",
+      "elements": [
+        "Te",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VBr2_JVASP-13546.cif",
+      "filename": "VBr2_JVASP-13546.cif",
+      "formula": "VBr2",
+      "elements": [
+        "Br",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VCl2_JVASP-8879.cif",
+      "filename": "VCl2_JVASP-8879.cif",
+      "formula": "VCl2",
+      "elements": [
+        "Cl",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VO2_JVASP-14457.cif",
+      "filename": "VO2_JVASP-14457.cif",
+      "formula": "VO2",
+      "elements": [
+        "O",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VS2_JVASP-75044.cif",
+      "filename": "VS2_JVASP-75044.cif",
+      "formula": "VS2",
+      "elements": [
+        "S",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VSe2_JVASP-680.cif",
+      "filename": "VSe2_JVASP-680.cif",
+      "formula": "VSe2",
+      "elements": [
+        "Se",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/WSe2_JVASP-652.cif",
+      "filename": "WSe2_JVASP-652.cif",
+      "formula": "WSe2",
+      "elements": [
+        "Se",
+        "W"
+      ],
+      "killer_tm": [
+        "W"
+      ],
+      "n_atoms": 3,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/CuBr_JVASP-60257.cif",
+      "filename": "CuBr_JVASP-60257.cif",
+      "formula": "CuBr",
+      "elements": [
+        "Br",
+        "Cu"
+      ],
+      "killer_tm": [
+        "Cu"
+      ],
+      "n_atoms": 4,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/CuHO2_JVASP-75381.cif",
+      "filename": "CuHO2_JVASP-75381.cif",
+      "formula": "CuHO2",
+      "elements": [
+        "Cu",
+        "H",
+        "O"
+      ],
+      "killer_tm": [
+        "Cu"
+      ],
+      "n_atoms": 4,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/LiCuO2_JVASP-75387.cif",
+      "filename": "LiCuO2_JVASP-75387.cif",
+      "formula": "LiCuO2",
+      "elements": [
+        "Cu",
+        "Li",
+        "O"
+      ],
+      "killer_tm": [
+        "Cu"
+      ],
+      "n_atoms": 4,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiSe_JVASP-6010.cif",
+      "filename": "TiSe_JVASP-6010.cif",
+      "formula": "TiSe",
+      "elements": [
+        "Se",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 4,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VCl2O_JVASP-75159.cif",
+      "filename": "VCl2O_JVASP-75159.cif",
+      "formula": "VCl2O",
+      "elements": [
+        "Cl",
+        "O",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 4,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TbCu2S2_JVASP-75052.cif",
+      "filename": "TbCu2S2_JVASP-75052.cif",
+      "formula": "TbCu2S2",
+      "elements": [
+        "Cu",
+        "S",
+        "Tb"
+      ],
+      "killer_tm": [
+        "Cu"
+      ],
+      "n_atoms": 5,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/Ti2Te2P_JVASP-27864.cif",
+      "filename": "Ti2Te2P_JVASP-27864.cif",
+      "formula": "Ti2Te2P",
+      "elements": [
+        "P",
+        "Te",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 5,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/CuSe2_4073841.cif",
+      "filename": "CuSe2_4073841.cif",
+      "formula": "CuSe2",
+      "elements": [
+        "Cu",
+        "Se"
+      ],
+      "killer_tm": [
+        "Cu"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/LiVF4_JVASP-75327.cif",
+      "filename": "LiVF4_JVASP-75327.cif",
+      "formula": "LiVF4",
+      "elements": [
+        "F",
+        "Li",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/Ta2Se_JVASP-13541.cif",
+      "filename": "Ta2Se_JVASP-13541.cif",
+      "formula": "Ta2Se",
+      "elements": [
+        "Se",
+        "Ta"
+      ],
+      "killer_tm": [
+        "Ta"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/Te2Mo_JVASP-676.cif",
+      "filename": "Te2Mo_JVASP-676.cif",
+      "formula": "Te2Mo",
+      "elements": [
+        "Mo",
+        "Te"
+      ],
+      "killer_tm": [
+        "Mo"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/Te2W_JVASP-661.cif",
+      "filename": "Te2W_JVASP-661.cif",
+      "formula": "Te2W",
+      "elements": [
+        "Te",
+        "W"
+      ],
+      "killer_tm": [
+        "W"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiBrN_JVASP-6184.cif",
+      "filename": "TiBrN_JVASP-6184.cif",
+      "formula": "TiBrN",
+      "elements": [
+        "Br",
+        "N",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiBrO_JVASP-27890.cif",
+      "filename": "TiBrO_JVASP-27890.cif",
+      "formula": "TiBrO",
+      "elements": [
+        "Br",
+        "O",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiClO_JVASP-27733.cif",
+      "filename": "TiClO_JVASP-27733.cif",
+      "formula": "TiClO",
+      "elements": [
+        "Cl",
+        "O",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiIN_JVASP-6268.cif",
+      "filename": "TiIN_JVASP-6268.cif",
+      "formula": "TiIN",
+      "elements": [
+        "I",
+        "N",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiNCl_JVASP-6181.cif",
+      "filename": "TiNCl_JVASP-6181.cif",
+      "formula": "TiNCl",
+      "elements": [
+        "Cl",
+        "N",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/TiNbS4_JVASP-60362.cif",
+      "filename": "TiNbS4_JVASP-60362.cif",
+      "formula": "TiNbS4",
+      "elements": [
+        "Nb",
+        "S",
+        "Ti"
+      ],
+      "killer_tm": [
+        "Nb",
+        "Ti"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": true
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VBrO_JVASP-60357.cif",
+      "filename": "VBrO_JVASP-60357.cif",
+      "formula": "VBrO",
+      "elements": [
+        "Br",
+        "O",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VClO_JVASP-8933.cif",
+      "filename": "VClO_JVASP-8933.cif",
+      "formula": "VClO",
+      "elements": [
+        "Cl",
+        "O",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    },
+    {
+      "path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/data_harvester/cif_ready/VOF_JVASP-75331.cif",
+      "filename": "VOF_JVASP-75331.cif",
+      "formula": "VOF",
+      "elements": [
+        "F",
+        "O",
+        "V"
+      ],
+      "killer_tm": [
+        "V"
+      ],
+      "n_atoms": 6,
+      "pseudo_ready": false
+    }
+  ],
+  "sweep_pool_size": 40
+}

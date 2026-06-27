@@ -1,0 +1,200 @@
+[2026-06-24T13:44:28Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260624_112317.json
+[2026-06-24T13:44:29Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_112317
+[2026-06-24T13:44:33Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_112317 --strict-spectral
+[2026-06-24T13:44:33Z] GCU PRESCREEN FAIL [killer_20260624_112317] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.00248273 phonopy=BLOCKED
+[2026-06-24T13:44:33Z] Cycle 32 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_32.json
+[2026-06-24T14:22:30Z] Cycle 33 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_33.json
+[2026-06-24T14:24:27Z] SC forge (parallel): killer_20260624_112317
+[2026-06-24T14:24:27Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260624_112317.json
+[2026-06-24T14:24:32Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_112317
+[2026-06-24T14:24:38Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_112317
+[2026-06-24T14:24:38Z] GCU PHONOPY FASTPATH [killer_20260624_112317] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.08631985 spotcheck=0
+[2026-06-24T14:24:38Z] GCU PRESCREEN PASS [killer_20260624_112317] λ=1.00248273 Δα=-0.00357738 → Phonopy final audit
+[2026-06-24T14:24:38Z] GCU PARASITE VALIDATOR [killer_20260624_112317] external=phonopy role=validation_only
+[2026-06-24T14:24:38Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260624_112317 --validator phonopy
+[2026-06-24T14:27:29Z] PHONOPY FAIL [killer_20260624_112317] verdict=FAIL_IMAGINARY_PHONON
+[2026-06-24T14:27:29Z] PHONOPY ROOT [killer_20260624_112317]: min -252.49 cm-1 <= -20.0 cm-1
+[2026-06-24T14:27:29Z] PHONOPY DOCKER [killer_20260624_112317]: _1/band.conf" was read as phonopy configuration file.
+Crystal structure was read from "phonopy_disp.yaml".
+Unit of length: angstrom
+Band structure and mesh sampling mode
+Settings:
+  Sampling mesh: [20 20  1]
+  Supercell: [1 1 1]
+  Primitive matrix:
+    [ 1. -0.  0.]
+    [0. 1. 0.]
+    [0. 0. 1.]
+Spacegroup: P-6m2 (187)
+Number of symmetry operations in supercell: 12
+Use -v option to watch primitive cell, unit cell, and supercell structures.
+
+Displacement-force dataset was read from "FORCE_SETS".
+-------------------------------- Symfc start -------------------------------
+Symfc version 1.7.2 (https://github.com/symfc/symfc)
+Citation: A. Seko and A. Togo, Phys. Rev. B, 110, 214302 (2024)
+Computing [2] order force constants.
+WARNING:
+  Half-grid shift [1, 1, 0] is not preserved by the primitive-cell point group
+  for mesh [20, 20, 1]. Point-group symmetry reduction is disabled; only time-
+  reversal symmetry is applied. Use a gamma-centered mesh (no shift) to keep
+  full symmetry.
+
+Increase log-level to watch detailed symfc log.
+--------------------------------- Symfc end --------------------------------
+Max drift of force constants: 0.00000000 (yy) 0.00000000 (yy) 
+Max drift after symmetrization by symfc projector: -0.00000000 (xx) -0.00000000 (xx) 
+
+Reciprocal space paths in reduced coordinates:
+[ 0.000  0.000  0.000] --> [ 0.500  0.000  0.000]
+[ 0.500  0.000  0.000] --> [ 0.333  0.333  0.000]
+[ 0.333  0.333  0.000] --> [ 0.000  0.000  0.000]
+Mesh numbers: [20 20  1]
+Number of irreducible q-points on sampling mesh: 200/400
+Calculating phonons on sampling mesh...
+Calculating DOS...
+
+Summary of calculation was written in "phonopy.yaml".
+-------------------------[time 2026-06-24 14:27:25]-------------------------
+                 _
+   ___ _ __   __| |
+  / _ \ '_ \ / _` |
+ |  __/ | | | (_| |
+  \___|_| |_|\__,_|
+
+>> phonopy band output OK -> /foliation_project/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260624_112317/phonopy/band.yaml
+>> phonopy total_dos.dat OK
+
+[2026-06-24T14:27:29Z] Cycle 34 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_34.json
+[2026-06-24T14:44:19Z] SC forge (parallel): killer_20260624_112317
+[2026-06-24T14:44:19Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260624_112317.json
+[2026-06-24T14:44:22Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_112317
+[2026-06-24T14:44:26Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_112317
+[2026-06-24T14:44:31Z] GCU PHONOPY FASTPATH [killer_20260624_112317] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.73481034 spotcheck=0
+[2026-06-24T14:44:31Z] GCU PRESCREEN PASS [killer_20260624_112317] λ=1.0235924 Δα=-0.03364135 → Phonopy final audit
+[2026-06-24T14:44:31Z] GCU PARASITE VALIDATOR [killer_20260624_112317] external=phonopy role=validation_only
+[2026-06-24T14:44:31Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260624_112317 --validator phonopy
+[2026-06-24T14:59:53Z] PHONOPY FAIL [killer_20260624_112317] verdict=FAIL_IMAGINARY_PHONON
+[2026-06-24T14:59:53Z] PHONOPY ROOT [killer_20260624_112317]: min -69.46 cm-1 <= -20.0 cm-1
+[2026-06-24T14:59:53Z] PHONOPY DOCKER [killer_20260624_112317]: conf" was read as phonopy configuration file.
+Crystal structure was read from "phonopy_disp.yaml".
+Unit of length: angstrom
+Band structure and mesh sampling mode
+Settings:
+  Sampling mesh: [20 20  1]
+  Supercell: [1 1 1]
+  Primitive matrix:
+    [ 0.5 -0.   0. ]
+    [0.  0.5 0. ]
+    [0. 0. 1.]
+Spacegroup: P-6m2 (187)
+Number of symmetry operations in supercell: 48
+Use -v option to watch primitive cell, unit cell, and supercell structures.
+
+Displacement-force dataset was read from "FORCE_SETS".
+-------------------------------- Symfc start -------------------------------
+Symfc version 1.7.2 (https://github.com/symfc/symfc)
+Citation: A. Seko and A. Togo, Phys. Rev. B, 110, 214302 (2024)
+Computing [2] order force constants.
+WARNING:
+  Half-grid shift [1, 1, 0] is not preserved by the primitive-cell point group
+  for mesh [20, 20, 1]. Point-group symmetry reduction is disabled; only time-
+  reversal symmetry is applied. Use a gamma-centered mesh (no shift) to keep
+  full symmetry.
+
+Increase log-level to watch detailed symfc log.
+--------------------------------- Symfc end --------------------------------
+Max drift of force constants: -0.00000000 (zz) -0.00000000 (zz) 
+Max drift after symmetrization by symfc projector: -0.00000000 (zz) -0.00000000 (zz) 
+
+Reciprocal space paths in reduced coordinates:
+[ 0.000  0.000  0.000] --> [ 0.500  0.000  0.000]
+[ 0.500  0.000  0.000] --> [ 0.333  0.333  0.000]
+[ 0.333  0.333  0.000] --> [ 0.000  0.000  0.000]
+Mesh numbers: [20 20  1]
+Number of irreducible q-points on sampling mesh: 200/400
+Calculating phonons on sampling mesh...
+Calculating DOS...
+
+Summary of calculation was written in "phonopy.yaml".
+-------------------------[time 2026-06-24 14:59:52]-------------------------
+                 _
+   ___ _ __   __| |
+  / _ \ '_ \ / _` |
+ |  __/ | | | (_| |
+  \___|_| |_|\__,_|
+
+>> phonopy band output OK -> /foliation_project/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260624_112317/phonopy/band.yaml
+>> phonopy total_dos.dat OK
+
+[2026-06-24T14:59:53Z] Cycle 35 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_35.json
+[2026-06-25T09:37:55Z] WARN: --god-mode blocks cycle; run god_mode in separate process
+[2026-06-25T09:37:55Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/god_mode_mass_sweeper.py --steps 100 --force
+[2026-06-25T10:27:49Z] Crystal Forge daemon — dual track infinite loop
+[2026-06-25T10:27:49Z] SC forge (parallel): killer_20260625_173803
+[2026-06-25T10:27:49Z] SC forge (parallel): killer_20260624_222331
+[2026-06-25T10:27:49Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260625_173803
+[2026-06-25T10:27:49Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T10:27:49Z] SC forge (parallel): killer_20260616_050648
+[2026-06-25T10:27:49Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260616_050648.json
+[2026-06-25T10:27:50Z] Manual SC forge: killer_20260624_222331
+[2026-06-25T10:27:50Z] Manual SC forge: killer_20260624_222331
+[2026-06-25T10:27:50Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T10:27:50Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T10:29:25Z] Solo SC forge: killer_20260624_222331
+[2026-06-25T10:29:25Z] Solo SC forge: killer_20260624_222331
+[2026-06-25T10:29:25Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T10:29:25Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T11:38:01Z] SC forge (parallel): killer_20260625_173803
+[2026-06-25T11:38:01Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260625_173803
+[2026-06-25T11:38:01Z] SC forge (parallel): killer_20260624_222331
+[2026-06-25T11:38:02Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T11:38:02Z] SC forge (parallel): killer_20260616_050648
+[2026-06-25T11:38:03Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260616_050648.json
+[2026-06-25T11:39:13Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_222331
+[2026-06-25T11:40:01Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260616_050648
+[2026-06-25T11:40:11Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260625_173803
+[2026-06-25T11:43:50Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_222331
+[2026-06-25T11:43:51Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260616_050648
+[2026-06-25T11:43:51Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260625_173803
+[2026-06-25T11:46:23Z] GCU PHONOPY FASTPATH [killer_20260624_222331] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.73481034 spotcheck=0
+[2026-06-25T11:46:23Z] GCU PRESCREEN PASS [killer_20260624_222331] λ=1.0235924 Δα=-0.03364135 → Phonopy final audit
+[2026-06-25T11:46:23Z] GCU PARASITE VALIDATOR [killer_20260624_222331] external=phonopy role=validation_only
+[2026-06-25T11:46:23Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260624_222331 --validator phonopy
+[2026-06-25T11:46:51Z] GCU PHONOPY FASTPATH [killer_20260616_050648] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.73481034 spotcheck=0
+[2026-06-25T11:46:51Z] GCU PRESCREEN PASS [killer_20260616_050648] λ=1.0235924 Δα=-0.03364135 → Phonopy final audit
+[2026-06-25T11:46:51Z] GCU PARASITE VALIDATOR [killer_20260616_050648] external=phonopy role=validation_only
+[2026-06-25T11:46:51Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260616_050648 --validator phonopy
+[2026-06-25T11:47:16Z] GCU PHONOPY FASTPATH [killer_20260625_173803] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.73481034 spotcheck=0
+[2026-06-25T11:47:16Z] GCU PRESCREEN PASS [killer_20260625_173803] λ=1.0235924 Δα=-0.03364135 → Phonopy final audit
+[2026-06-25T11:47:16Z] GCU PARASITE VALIDATOR [killer_20260625_173803] external=phonopy role=validation_only
+[2026-06-25T11:47:16Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260625_173803 --validator phonopy
+[2026-06-25T13:31:43Z] Crystal Forge daemon — dual track infinite loop
+[2026-06-25T13:33:57Z] WARN: --god-mode blocks cycle; run god_mode in separate process
+[2026-06-25T13:33:57Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/god_mode_mass_sweeper.py --steps 20 --force
+[2026-06-25T15:34:00Z] SC forge (parallel): killer_20260625_215721
+[2026-06-25T15:34:00Z] SC forge (parallel): killer_20260625_213403
+[2026-06-25T15:34:00Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260625_213403
+[2026-06-25T15:34:00Z] SC forge (parallel): killer_20260625_173803
+[2026-06-25T15:34:00Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260625_173803
+[2026-06-25T15:34:00Z] SC forge (parallel): killer_20260624_222331
+[2026-06-25T15:34:00Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260625_215721.json
+[2026-06-25T15:34:03Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260625_213403
+[2026-06-25T15:34:03Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260625_173803
+[2026-06-25T15:34:03Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260625_215721
+[2026-06-25T15:34:10Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260625_215721 --strict-spectral
+[2026-06-25T15:34:10Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260625_173803 --strict-spectral
+[2026-06-25T15:34:10Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260625_213403 --strict-spectral
+[2026-06-25T15:34:14Z] GCU PRESCREEN FAIL [killer_20260625_215721] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.01670485 phonopy=BLOCKED
+[2026-06-25T15:34:14Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260624_222331
+[2026-06-25T15:34:16Z] GCU PRESCREEN FAIL [killer_20260625_173803] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.0235924 phonopy=BLOCKED
+[2026-06-25T15:34:16Z] GCU PRESCREEN FAIL [killer_20260625_213403] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.0235924 phonopy=BLOCKED
+[2026-06-25T15:34:16Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_222331
+[2026-06-25T15:34:22Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_222331 --strict-spectral
+[2026-06-25T15:34:23Z] GCU PRESCREEN FAIL [killer_20260624_222331] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.0235924 phonopy=BLOCKED
+[2026-06-25T15:34:23Z] HEA forge cycle
+[2026-06-25T15:34:23Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-25T15:34:28Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-25T15:34:36Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-25T15:34:36Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-25T15:34:38Z] Cycle 36 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_36.json

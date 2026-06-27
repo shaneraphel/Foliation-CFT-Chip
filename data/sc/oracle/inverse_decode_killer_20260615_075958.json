@@ -1,0 +1,189 @@
+{
+  "schema": "foliation.inverse_decode.v1",
+  "deterministic": true,
+  "run_id": "killer_20260615_075958",
+  "formula_input": null,
+  "theta_star_ref": null,
+  "J_BKT_blueprint": 0.05298501139533229,
+  "j_threshold": 0.05,
+  "decoded": {
+    "host_tm": "Ti",
+    "ligand": "O",
+    "dopant_hint": null,
+    "confidence": "lookup_only",
+    "constraints_satisfied": [
+      "E_k band",
+      "V_k overlap",
+      "U window"
+    ],
+    "pair_ranking": {
+      "best_pair": {
+        "tm": "Ti",
+        "ligand": "O",
+        "E_pred_eV": 3.865,
+        "V_pred_eV": 0.0036989347686960574,
+        "E_bath_hits": 4,
+        "V_bath_hits": 6,
+        "E_band_err_eV": 3.217957854934394,
+        "V_band_err_eV": 0.8976219098352183,
+        "U_penalty": 0.0,
+        "total_L1": 24.115579764769613
+      },
+      "candidates": [
+        {
+          "tm": "Ti",
+          "ligand": "O",
+          "E_pred_eV": 3.865,
+          "V_pred_eV": 0.0036989347686960574,
+          "E_bath_hits": 4,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.217957854934394,
+          "V_band_err_eV": 0.8976219098352183,
+          "U_penalty": 0.0,
+          "total_L1": 24.115579764769613
+        },
+        {
+          "tm": "Ta",
+          "ligand": "O",
+          "E_pred_eV": 3.939,
+          "V_pred_eV": 0.0036975861284866264,
+          "E_bath_hits": 4,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.217957854934394,
+          "V_band_err_eV": 0.8976300016764749,
+          "U_penalty": 0.0,
+          "total_L1": 24.11558785661087
+        },
+        {
+          "tm": "Ta",
+          "ligand": "Cl",
+          "E_pred_eV": 3.4210000000000007,
+          "V_pred_eV": 0.0036817877717475736,
+          "E_bath_hits": 3,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.045585967365713,
+          "V_band_err_eV": 0.8977247918169092,
+          "U_penalty": 0.0,
+          "total_L1": 33.94331075918262
+        },
+        {
+          "tm": "V",
+          "ligand": "O",
+          "E_pred_eV": 3.6985000000000006,
+          "V_pred_eV": 0.0036998980831313656,
+          "E_bath_hits": 3,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.0735255115210762,
+          "V_band_err_eV": 0.8976161299486064,
+          "U_penalty": 0.0,
+          "total_L1": 33.971141641469686
+        },
+        {
+          "tm": "Nb",
+          "ligand": "O",
+          "E_pred_eV": 3.754,
+          "V_pred_eV": 0.0036960448253901333,
+          "E_bath_hits": 3,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.1290255115210757,
+          "V_band_err_eV": 0.8976392494950539,
+          "U_penalty": 0.0,
+          "total_L1": 34.026664761016136
+        },
+        {
+          "tm": "Ti",
+          "ligand": "Cl",
+          "E_pred_eV": 3.3470000000000004,
+          "V_pred_eV": 0.0036831364119570046,
+          "E_bath_hits": 3,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.2675859673657137,
+          "V_band_err_eV": 0.8977166999756526,
+          "U_penalty": 0.0,
+          "total_L1": 34.165302667341365
+        },
+        {
+          "tm": "Nb",
+          "ligand": "Cl",
+          "E_pred_eV": 3.236,
+          "V_pred_eV": 0.0036802464686510805,
+          "E_bath_hits": 2,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.4947802279223192,
+          "V_band_err_eV": 0.8977340396354881,
+          "U_penalty": 0.0,
+          "total_L1": 44.39251426755781
+        },
+        {
+          "tm": "V",
+          "ligand": "Cl",
+          "E_pred_eV": 3.1805000000000008,
+          "V_pred_eV": 0.0036840997263923128,
+          "E_bath_hits": 2,
+          "V_bath_hits": 6,
+          "E_band_err_eV": 3.605780227922318,
+          "V_band_err_eV": 0.8977109200890407,
+          "U_penalty": 0.0,
+          "total_L1": 44.503491148011356
+        }
+      ],
+      "confidence": "lookup_only"
+    }
+  },
+  "doping": {
+    "x_theory": 0.0,
+    "mu_theta_eV": -1.2688525874575034,
+    "mu_discrete_accepted_eV": null
+  },
+  "accepted_recipe": null,
+  "attempts": [
+    {
+      "try_index": 0,
+      "x_theory": 0.0,
+      "x_discrete": 0.0,
+      "fraction": "0/3",
+      "supercell": "sqrt3xsqrt3",
+      "mu_theta_eV": -1.2688525874575034,
+      "mu_discrete_eV": 0.0,
+      "formula": {
+        "formula_pretty": "TiO2",
+        "formula_subscript": "TiO2",
+        "supercell": "1x1",
+        "denominator": 1,
+        "numerator": 0,
+        "x_discrete": 0.0,
+        "tm_sites": 1,
+        "dopant_atoms": 0,
+        "host_atoms": 1,
+        "ligand_atoms": 2
+      },
+      "fpu": {
+        "ok": true,
+        "J_BKT": 0.007738872203955083,
+        "L": 0.007738872203955083,
+        "sigma_iwn": -0.7722497368565291,
+        "forge_calls": 3,
+        "theta_evaluated": [
+          2.441291818990309,
+          0.0,
+          0.23420660959479644,
+          0.09546191849481182,
+          0.1161571913548475,
+          0.14832385923421462,
+          0.11192578851670872,
+          0.2137401512520155,
+          4.091805739443395,
+          3.4473618812538915,
+          5.176156323624389,
+          4.894783750179876,
+          3.519418346668428,
+          4.5929323434133185
+        ],
+        "report_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/fpu_recheck/recheck_killer_20260615_075958_0over3.json"
+      },
+      "verdict": "FAIL_FRAGILE_PHASE"
+    }
+  ],
+  "verdict": "FAIL_ALL_DISCRETE_FRACTIONS",
+  "candidate_formulas": []
+}

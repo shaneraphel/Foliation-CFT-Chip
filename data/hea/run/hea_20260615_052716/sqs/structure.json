@@ -1,0 +1,17 @@
+{
+  "n_atoms": 125,
+  "replication": [
+    5,
+    5,
+    5
+  ],
+  "elements": [
+    "Fe",
+    "Mn",
+    "Co",
+    "Cr",
+    "Ni"
+  ],
+  "lattice_constant_a": 12.551145366061219,
+  "method": "ase_random_sss"
+}

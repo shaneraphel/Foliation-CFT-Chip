@@ -1,0 +1,40 @@
+{
+  "schema": "foliation.phonopy_stability_verdict.v1",
+  "run_id": "killer_20260615_122305",
+  "formula_proposed": "Mo_3Ta_1S_8",
+  "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR",
+  "phonopy_run_dir": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305",
+  "decode_ref": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260615_122305.json",
+  "threshold_cm-1": -20.0,
+  "band_analysis": {
+    "ok": true,
+    "min_frequency_THz": -2.1004490909,
+    "max_frequency_THz": 7.7313193371,
+    "min_frequency_cm-1": -70.06343795131298,
+    "max_frequency_cm-1": 257.8890462061101,
+    "imaginary_mode_points": 1375,
+    "n_frequencies": 5508,
+    "band_yaml": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305/phonopy/band.yaml"
+  },
+  "docker": {
+    "ok": true,
+    "returncode": 0,
+    "stdout_tail": " mesh: [20 20  1]\n  Supercell: [1 1 1]\n  Primitive matrix:\n    [ 1. -0.  0.]\n    [0. 1. 0.]\n    [0. 0. 1.]\nSpacegroup: P-6m2 (187)\nNumber of symmetry operations in supercell: 12\nUse -v option to watch primitive cell, unit cell, and supercell structures.\n\nDisplacement-force dataset was read from \"FORCE_SETS\".\n-------------------------------- Symfc start -------------------------------\nSymfc version 1.7.2 (https://github.com/symfc/symfc)\nCitation: A. Seko and A. Togo, Phys. Rev. B, 110, 214302 (2024)\nComputing [2] order force constants.\nWARNING:\n  Half-grid shift [1, 1, 0] is not preserved by the primitive-cell point group\n  for mesh [20, 20, 1]. Point-group symmetry reduction is disabled; only time-\n  reversal symmetry is applied. Use a gamma-centered mesh (no shift) to keep\n  full symmetry.\n\nIncrease log-level to watch detailed symfc log.\n--------------------------------- Symfc end --------------------------------\nMax drift of force constants: -0.00000000 (zz) -0.00000000 (zz) \nMax drift after symmetrization by symfc projector: -0.00000000 (zz) -0.00000000 (zz) \n\nReciprocal space paths in reduced coordinates:\n[ 0.000  0.000  0.000] --> [ 0.500  0.000  0.000]\n[ 0.500  0.000  0.000] --> [ 0.333  0.333  0.000]\n[ 0.333  0.333  0.000] --> [ 0.000  0.000  0.000]\nMesh numbers: [20 20  1]\nNumber of irreducible q-points on sampling mesh: 200/400\nCalculating phonons on sampling mesh...\nCalculating DOS...\n\nSummary of calculation was written in \"phonopy.yaml\".\n-------------------------[time 2026-06-21 17:03:19]-------------------------\n                 _\n   ___ _ __   __| |\n  / _ \\ '_ \\ / _` |\n |  __/ | | | (_| |\n  \\___|_| |_|\\__,_|\n\nFOLIATION_GCU_MEM_HIJACK_SUMMARY dgemm=0 zgemm=0 zaxpy=0 writeback=0 sidecar=/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260615_122305/qe_hamiltonian_sidecar.json\n>> phonopy band output OK -> /foliation_project/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305/phonopy/band.yaml\n>> phonopy total_dos.dat OK\n",
+    "stderr_tail": "",
+    "gcu_sidecar": {
+      "mode": "sidecar_injected_v1",
+      "sidecar": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260615_122305/qe_hamiltonian_sidecar.json",
+      "wrapper_dir": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260615_122305",
+      "interposer_src": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260615_122305/gcu_qe_interposer.c",
+      "interposer_so": "/tmp/libfoliation_gcu_qe_killer_20260615_122305.so",
+      "force_interpose": "1",
+      "force_large_zgemm": "1",
+      "large_zgemm_k": "10000"
+    }
+  },
+  "passed": false,
+  "verdict": "FAIL_IMAGINARY_PHONON",
+  "min_frequency_cm-1": -70.06343795131298,
+  "imaginary_mode_points": 1375,
+  "reason": "min -70.06 cm-1 <= -20.0 cm-1"
+}

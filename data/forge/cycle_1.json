@@ -1,0 +1,172 @@
+{
+  "cycle": 1,
+  "sc": [
+    {
+      "run_id": "killer_20260615_122305",
+      "track": "SC",
+      "decode": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"verdict\": \"PASS_SYNTHESIS_RECIPE\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260615_122305.json\",\n  \"accepted_formula\": \"Mo_3Ta_1S_8\",\n  \"J_recheck\": 0.1521559551196927\n}\n",
+        "stderr": "decode=PASS_SYNTHESIS_RECIPE formula=Mo_3Ta_1S_8 J_recheck=0.152 tries=2\n"
+      },
+      "decode_verdict": "PASS_SYNTHESIS_RECIPE",
+      "poscar": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"run_id\": \"killer_20260615_122305\",\n  \"formula\": \"Mo_3Ta_1S_8\",\n  \"nat\": 12,\n  \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR\",\n  \"out_dir\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305\"\n}\n",
+        "stderr": "/Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py:98: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.\n  struct = CifParser(str(parent_cif)).parse_structures(primitive=False)[0]\nstructure=Mo_3Ta_1S_8 nat=12 poscar=POSCAR\n"
+      },
+      "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR",
+      "gcu_prescreen": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"schema\": \"foliation.gcu_phonopy_prescreen.v1\",\n  \"ts\": \"2026-06-20T01:54:07.690962+00:00\",\n  \"run_id\": \"killer_20260615_122305\",\n  \"passed\": true,\n  \"verdict\": \"PASS_GCU_PRESCREEN\",\n  \"pipeline\": [\n    \"chip_a/chip_b physics sim\",\n    \"Wannier→ROM core1 burn\",\n    \"GCU 4-core reference sim\",\n    \"superoperator spectral proxy\"\n  ],\n  \"phonopy_docker\": \"FINAL_AUDIT_ONLY\",\n  \"chip_sim\": {\n    \"chip_a_ok\": true,\n    \"chip_b_ok\": true\n  },\n  \"rom_burn\": {\n    \"mapped_hops\": 2299,\n    \"long_range_hops\": 2178,\n    \"mem\": \"/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_weights.mem\",\n    \"index\": \"/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_index.mem\",\n    \"verilog\": \"/Users/shanyu/Foliation-Engine/out/chip/gcu_hamiltonian/verilog/gcu_exterior_routing_killer_20260615_122305.v\",\n    \"meta\": \"/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_weights.meta.json\",\n    \"num_wann\": 11,\n    \"r_max\": 2,\n    \"index_depth\": 15125\n  },\n  \"gcu_core_sim\": {\n    \"exterior_routing_jw\": {\n      \"hop_out\": -1000,\n      \"coulomb_out\": -500,\n      \"jw_sign\": 1,\n      \"ok\": true\n    },\n    \"exterior_routing_rom\": {\n      \"ok\": true\n    },\n    \"spinor_projection\": {\n      \"out_q16\": [\n        32768.0,\n        -16384.0,\n        0\n      ],\n      \"out_norm\": [\n        1.0,\n        -0.5,\n        0.0\n      ],\n      \"ok\": true\n    },\n    \"einstein_contraction\": {\n      \"C\": [\n        [\n          19,\n          22\n        ],\n        [\n          43,\n          50\n        ]\n      ],\n      \"ok\": true\n    },\n    \"spectral_extractor\": {\n      \"delta_alpha\": 3,\n      \"valid\": true,\n      \"ok\": true\n    },\n    \"superoperator_chain\": {\n      \"lambda_max\": 0.925066,\n      \"delta_alpha\": 0.112372,\n      \"ok\": true\n    }\n  },\n  \"wannier_hr\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/wannier/wannier90_hr.dat\",\n  \"hubbard\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/fpu_feed/hubbard_params.json\",\n  \"h_block\": {\n    \"num_wann\": 11,\n    \"h_raw\": [\n      [\n        5.349525,\n        0.292\n      ],\n      [\n        0.292,\n        4.819176\n      ]\n    ],\n    \"h_norm\": [\n      [\n        1.0,\n        0.05458428552067707\n      ],\n      [\n        0.05458428552067707,\n        0.9008605436931316\n      ]\n    ],\n    \"scale_ev\": 5.349525,\n    \"nn_hop_ev\": 0.314437\n  },\n  \"spectral_proxy\": {\n    \"lambda_max\": 1.04891106,\n    \"delta_alpha_log2\": -0.06889235,\n    \"soft_mode_risk\": true,\n    \"strict_block\": false\n  },\n  \"elapsed_s\": 0.415,\n  \"spectral_warning\": \"SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_prescreen_killer_20260615_122305.json\"\n}\nverdict=PASS_GCU_PRESCREEN phonopy_docker=FINAL_AUDIT_ONLY\n",
+        "stderr": ""
+      },
+      "gcu_prescreen_body": {
+        "schema": "foliation.gcu_phonopy_prescreen.v1",
+        "ts": "2026-06-20T01:54:07.690962+00:00",
+        "run_id": "killer_20260615_122305",
+        "passed": true,
+        "verdict": "PASS_GCU_PRESCREEN",
+        "pipeline": [
+          "chip_a/chip_b physics sim",
+          "Wannier→ROM core1 burn",
+          "GCU 4-core reference sim",
+          "superoperator spectral proxy"
+        ],
+        "phonopy_docker": "FINAL_AUDIT_ONLY",
+        "chip_sim": {
+          "chip_a_ok": true,
+          "chip_b_ok": true
+        },
+        "rom_burn": {
+          "mapped_hops": 2299,
+          "long_range_hops": 2178,
+          "mem": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_weights.mem",
+          "index": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_index.mem",
+          "verilog": "/Users/shanyu/Foliation-Engine/out/chip/gcu_hamiltonian/verilog/gcu_exterior_routing_killer_20260615_122305.v",
+          "meta": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260615_122305/exterior_routing_weights.meta.json",
+          "num_wann": 11,
+          "r_max": 2,
+          "index_depth": 15125
+        },
+        "gcu_core_sim": {
+          "exterior_routing_jw": {
+            "hop_out": -1000,
+            "coulomb_out": -500,
+            "jw_sign": 1,
+            "ok": true
+          },
+          "exterior_routing_rom": {
+            "ok": true
+          },
+          "spinor_projection": {
+            "out_q16": [
+              32768.0,
+              -16384.0,
+              0
+            ],
+            "out_norm": [
+              1.0,
+              -0.5,
+              0.0
+            ],
+            "ok": true
+          },
+          "einstein_contraction": {
+            "C": [
+              [
+                19,
+                22
+              ],
+              [
+                43,
+                50
+              ]
+            ],
+            "ok": true
+          },
+          "spectral_extractor": {
+            "delta_alpha": 3,
+            "valid": true,
+            "ok": true
+          },
+          "superoperator_chain": {
+            "lambda_max": 0.925066,
+            "delta_alpha": 0.112372,
+            "ok": true
+          }
+        },
+        "wannier_hr": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/wannier/wannier90_hr.dat",
+        "hubbard": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/fpu_feed/hubbard_params.json",
+        "h_block": {
+          "num_wann": 11,
+          "h_raw": [
+            [
+              5.349525,
+              0.292
+            ],
+            [
+              0.292,
+              4.819176
+            ]
+          ],
+          "h_norm": [
+            [
+              1.0,
+              0.05458428552067707
+            ],
+            [
+              0.05458428552067707,
+              0.9008605436931316
+            ]
+          ],
+          "scale_ev": 5.349525,
+          "nn_hop_ev": 0.314437
+        },
+        "spectral_proxy": {
+          "lambda_max": 1.04891106,
+          "delta_alpha_log2": -0.06889235,
+          "soft_mode_risk": true,
+          "strict_block": false
+        },
+        "elapsed_s": 0.415,
+        "spectral_warning": "SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED"
+      },
+      "phonopy": {
+        "ok": false,
+        "exit": -15,
+        "stdout": "{\n  \"ok\": true,\n  \"run_id\": \"killer_20260615_122305\",\n  \"formula\": \"Mo_3Ta_1S_8\",\n  \"nat\": 12,\n  \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR\",\n  \"out_dir\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305\"\n}\n[*] QE scf.in -> /Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305/qe/scf.in (12 atoms, 3 species)\n",
+        "stderr": "/Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py:98: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.\n  struct = CifParser(str(parent_cif)).parse_structures(primitive=False)[0]\nstructure=Mo_3Ta_1S_8 nat=12 poscar=POSCAR\n"
+      },
+      "stability": {
+        "schema": "foliation.phonopy_stability_verdict.v1",
+        "run_id": "killer_20260615_122305",
+        "formula_proposed": "Mo_3Ta_1S_8",
+        "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR",
+        "phonopy_run_dir": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305",
+        "decode_ref": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260615_122305.json",
+        "threshold_cm-1": -20.0,
+        "band_analysis": {
+          "ok": false,
+          "error": "missing /Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260615_122305/phonopy/band.yaml"
+        },
+        "docker": {
+          "ok": false,
+          "returncode": 2,
+          "stdout_tail": " number of supercells: 9\n\"phonopy_disp.yaml\" and supercells have been created.\n\nSummary of calculation was written in \"phonopy_disp.yaml\".\n-------------------------[time 2026-06-20 00:31:14]-------------------------\n                 _\n   ___ _ __   __| |\n  / _ \\ '_ \\ / _` |\n |  __/ | | | (_| |\n  \\___|_| |_|\\__,_|\n\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-001/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-001 (oracle-light)\nWARN: pw.x failed in disp-001\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-002/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-002 (oracle-light)\nWARN: pw.x failed in disp-002\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-003/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-003 (oracle-light)\nWARN: pw.x failed in disp-003\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-004/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-004 (oracle-light)\nWARN: pw.x failed in disp-004\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-005/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-005 (oracle-light)\nWARN: pw.x failed in disp-005\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-006/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-006 (oracle-light)\nWARN: pw.x failed in disp-006\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-007/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-007 (oracle-light)\nWARN: pw.x failed in disp-007\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-008/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-008 (oracle-light)\nWARN: pw.x failed in disp-008\n[*] QE scf.in -> /tmp/oracle_phonopy_1/disp-009/scf.in (12 atoms, 3 species)\n>> pw.x forces disp-009 (oracle-light)\nWARN: pw.x failed in disp-009\n>> phonopy collect forces\nWARN: incomplete forces in disp-001/pw.out\nWARN: incomplete forces in disp-002/pw.out\nWARN: incomplete forces in disp-003/pw.out\nWARN: incomplete forces in disp-004/pw.out\nWARN: incomplete forces in disp-005/pw.out\nWARN: incomplete forces in disp-006/pw.out\nWARN: incomplete forces in disp-007/pw.out\nWARN: incomplete forces in disp-008/pw.out\n",
+          "stderr_tail": ""
+        },
+        "passed": false,
+        "verdict": "FAIL_QE_PHONOPY_INCOMPLETE",
+        "reason": ""
+      },
+      "ok": false,
+      "stage": "phonopy"
+    }
+  ],
+  "hea": null,
+  "god_mode": null
+}

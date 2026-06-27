@@ -1,0 +1,38 @@
+{
+  "parent_cif": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/candidate.cif",
+  "supercell_matrix": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "supercell_name": "2x2",
+  "host": "Mo",
+  "ligand": "S",
+  "dopant": "Ta",
+  "dopant_sites": 1,
+  "host_sites": 3,
+  "dopant_indices": [
+    0
+  ],
+  "substitution_rule": "lexicographic_frac_coords_first_TM",
+  "nat": 12,
+  "formula_pretty": "TaMo3S8",
+  "decode_run_id": "killer_20260615_122305",
+  "target_formula": "Mo_3Ta_1S_8",
+  "deterministic": true,
+  "randomness": "none",
+  "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/POSCAR",
+  "cif": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_122305/decoded.cif"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "D_m2_per_s": -5.148643662160825e-15,
+  "T_K": 1500.0,
+  "sluggish": true,
+  "message": "D=-5.149e-15 m\u00b2/s @ 1500.0K \u2014 sluggish OK"
+}

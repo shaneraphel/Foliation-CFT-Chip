@@ -1,0 +1,11 @@
+{
+  "source": "wannier90_hr.dat+bipartition-replica-v1",
+  "method": "orbital_bipartition_ground_occupation",
+  "von_neumann_entropy_bits": 0.007359604119957749,
+  "num_wann": 11,
+  "bipartition": [
+    5,
+    6
+  ],
+  "hr_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_122305/wannier/wannier90_hr.dat"
+}

@@ -1,0 +1,14 @@
+fcc
+3.550000
+5 5 5
+5
+Ni 0.350000
+Co 0.050018
+Cr 0.199965
+Fe 0.050018
+Mn 0.350000
+
+# Run inside container:
+#   corrdump -l=sqs.in -2=-4.0 -3=-2.0 -4=-1.0 > clusters.out
+#   mcsqs -n=5000 -wc clusters.out sqs.in > sqs.out
+# Or: python3 sqs_preprocess.py --run-mcsqs

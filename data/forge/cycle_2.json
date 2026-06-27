@@ -1,0 +1,19 @@
+{
+  "cycle": 2,
+  "sc": [
+    {
+      "run_id": "killer_20260615_122305",
+      "track": "SC",
+      "decode": {
+        "ok": false,
+        "exit": -1,
+        "error": "timeout 600s",
+        "stdout": "Command '['/usr/local/bin/python3', '/Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py', '--run-id', 'killer_20260615_122305', '--j-threshold', '0.05']' timed out after 600 seconds"
+      },
+      "ok": false,
+      "stage": "decode"
+    }
+  ],
+  "hea": null,
+  "god_mode": null
+}

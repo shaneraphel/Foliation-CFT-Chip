@@ -1,0 +1,38 @@
+{
+  "schema": "foliation.physics_tapeout.sky130.v1",
+  "pdk": "sky130_fd_sc_hd",
+  "excludes": [
+    "gcu_hamiltonian",
+    "nlp_array"
+  ],
+  "chips": {
+    "cft": {
+      "top": "foliation_cft_mapped",
+      "route_mode": "global",
+      "aig": "cft/netlist.aig",
+      "mapped_v": "cft/mapped_sky130.v",
+      "def": "cft/final.def",
+      "gds": null,
+      "yosys_log": "cft/yosys_map.log"
+    },
+    "fpu": {
+      "top": "foliation_fpu_mapped",
+      "route_mode": "global",
+      "aig": "fpu/netlist.aig",
+      "mapped_v": "fpu/mapped_sky130.v",
+      "def": "fpu/final.def",
+      "gds": null,
+      "yosys_log": "fpu/yosys_map.log"
+    },
+    "qe_accel": {
+      "top": "foliation_qe_accel_mapped",
+      "route_mode": "global",
+      "aig": "qe_accel/netlist.aig",
+      "mapped_v": "qe_accel/mapped_sky130.v",
+      "def": "qe_accel/final.def",
+      "gds": null,
+      "yosys_log": "qe_accel/yosys_map.log"
+    }
+  },
+  "ts": 1782377544
+}

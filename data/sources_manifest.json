@@ -1,0 +1,49 @@
+{
+  "ts": 1782460406,
+  "author": "Shan Yu",
+  "release": "0.2.0",
+  "sources": {
+    "MP": true,
+    "JARVIS": true,
+    "AFLOW": true,
+    "OQMD": true,
+    "OPTIMADE": [
+      "MP",
+      "OQMD"
+    ],
+    "COD": [
+      "MoS2",
+      "NbSe2",
+      "WS2",
+      "TaS2",
+      "VSe2"
+    ],
+    "OQMD_STRUCT": true,
+    "NOMAD_INDEX": true,
+    "MATBENCH_STATIC": true
+  },
+  "extended_rows": 21,
+  "by_source": {
+    "OPTIMADE_OQMD": 21
+  },
+  "nomad_crossref": {
+    "queried_at": 1782460385,
+    "hits": {
+      "MoS2": {
+        "error": "HTTP Error 404: Not Found"
+      },
+      "NbSe2": {
+        "error": "HTTP Error 404: Not Found"
+      },
+      "WS2": {
+        "error": "HTTP Error 404: Not Found"
+      },
+      "TaS2": {
+        "error": "HTTP Error 404: Not Found"
+      },
+      "VSe2": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    }
+  }
+}

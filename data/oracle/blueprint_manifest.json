@@ -1,0 +1,66 @@
+{
+  "schema": "foliation.theta_blueprint_manifest.v1",
+  "blueprints": [
+    {
+      "run_id": "killer_20260615_122305",
+      "formula": "MoS2",
+      "J_BKT": 0.353557667669564,
+      "L_best": 0.353557667669564,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260615_122305.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260615_122305.json",
+      "exported_at": "2026-06-16T16:48:03.664985+00:00"
+    },
+    {
+      "run_id": "killer_20260616_050648",
+      "formula": "MoS2",
+      "J_BKT": 0.07017709945168038,
+      "L_best": 0.07017709945168038,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260616_050648.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260616_050648.json",
+      "exported_at": "2026-06-24T14:22:30.397347+00:00"
+    },
+    {
+      "run_id": "killer_20260624_112317",
+      "formula": "MoS2",
+      "J_BKT": 0.2148258808986614,
+      "L_best": 0.2148258808986614,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260624_112317.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260624_112317.json",
+      "exported_at": "2026-06-24T14:22:39.614554+00:00"
+    },
+    {
+      "run_id": "killer_20260624_222331",
+      "formula": "MoS2",
+      "J_BKT": 0.10219776623748178,
+      "L_best": 0.10219776623748178,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260624_222331.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260624_222331.json",
+      "exported_at": "2026-06-24T14:56:50.954078+00:00"
+    },
+    {
+      "run_id": "killer_20260625_173803",
+      "formula": "MoS2",
+      "J_BKT": 0.17955694658801202,
+      "L_best": 0.17955694658801202,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260625_173803.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260625_173803.json",
+      "exported_at": "2026-06-25T10:14:50.043486+00:00"
+    },
+    {
+      "run_id": "killer_20260625_213403",
+      "formula": "MoS2",
+      "J_BKT": 0.07017709945168038,
+      "L_best": 0.07017709945168038,
+      "csv": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260625_213403.csv",
+      "json": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/theta_blueprint/blueprint_killer_20260625_213403.json",
+      "exported_at": "2026-06-25T14:20:35.195569+00:00"
+    }
+  ],
+  "summary": {
+    "count": 6,
+    "J_max": 0.353557667669564,
+    "formulas": [
+      "MoS2"
+    ]
+  }
+}

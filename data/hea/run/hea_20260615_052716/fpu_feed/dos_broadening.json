@@ -1,0 +1,20 @@
+{
+  "dos_broadening_eV": 0.162766,
+  "source": "CONFIG_ENTROPY_PROXY",
+  "config_entropy_nats": 1.356385,
+  "elements": [
+    "Ni",
+    "Co",
+    "Cr",
+    "Fe",
+    "Mn"
+  ],
+  "fractions": {
+    "Ni": 0.35000000082977173,
+    "Co": 0.05001753037844122,
+    "Cr": 0.19996493758357414,
+    "Fe": 0.05001753037844122,
+    "Mn": 0.35000000082977173
+  },
+  "note": "proxy until QE/phonopy DOS available"
+}

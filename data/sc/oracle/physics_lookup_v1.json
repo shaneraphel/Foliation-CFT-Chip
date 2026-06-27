@@ -1,0 +1,257 @@
+{
+  "schema": "foliation.physics_lookup.v1",
+  "version": "1.0.0",
+  "deterministic": true,
+  "description": "Hard-coded Pauling EN + Shannon ionic radii for Top-10 sweep-pool elements. No ML, no sampling.",
+  "sources": {
+    "pauling_en": "Pauling (1960) scale; CRC Handbook typical values",
+    "shannon_radius_pm": "Shannon & Prewitt (1970); VI coordination unless noted"
+  },
+  "decode_rules": {
+    "E_k_eV": {
+      "formula": "E_k ≈ alpha * |chi_TM - chi_L| + beta * E_shift_eV",
+      "alpha_eV_per_delta_chi": 1.85,
+      "beta": 1.0,
+      "E_shift_eV": 0.35,
+      "tolerance_eV": 0.75,
+      "comment": "Bath level tracks ligand–TM electronegativity gap; both keys must match interval."
+    },
+    "V_k_eV": {
+      "formula": "V_k ≈ gamma * exp(-d / a0) * overlap_scale",
+      "gamma": 0.42,
+      "a0_A": 0.52,
+      "overlap_scale": "1 - (r_TM + r_L) / (2 * d_bond_A)",
+      "d_bond_default_A": 2.45,
+      "tolerance_eV": 0.35,
+      "comment": "Hybridization scales with Shannon overlap; smaller radii → larger V_k band."
+    },
+    "U_eV": {
+      "formula": "U in tm_d_u_eV[family].window",
+      "tolerance_eV": 0.8,
+      "comment": "Hubbard U selects transition-metal family, not individual bath index."
+    },
+    "Mu_eV": {
+      "formula": "mu vs mu_ref_eV → dopant_hint",
+      "mu_ref_eV": 0.0,
+      "delta_mu_donor_eV": -0.25,
+      "delta_mu_acceptor_eV": 0.25,
+      "comment": "mu below ref → electron donor (e.g. Ta5+ on Mo4+ site); above → acceptor."
+    },
+    "pair_filter": {
+      "rule": "Keep (TM, L) iff all bath k satisfy E_k and V_k bands simultaneously",
+      "multi_solution": "List all pairs passing constraints; rank by total band violation (L1), no softmax"
+    },
+    "mu_discrete_reverse": {
+      "mu_ref_eV": 0.0,
+      "mu_per_dopant_fraction_eV": 0.45,
+      "dopant_activation_threshold_eV": 0.5,
+      "formula_forward": "mu_discrete = mu_ref_eV + mu_per_dopant_fraction_eV * x_discrete",
+      "formula_inverse": "x_theory = 0 if |mu_theta-mu_ref| < threshold else piecewise linear toward mu_ref",
+      "comment": "x>max requires FAIL_FRAGILE unless lower-x grid passes FPU; slope calibrated for 4d TMD μ scale",
+      "max_dopant_fraction": 0.25
+    }
+  },
+  "elements": {
+    "Mo": {
+      "role": [
+        "transition_metal",
+        "host"
+      ],
+      "oxidation_state": 4,
+      "coordination": 6,
+      "pauling_en": 2.16,
+      "shannon_radius_pm": 65,
+      "tm_family": "4d"
+    },
+    "Nb": {
+      "role": [
+        "transition_metal",
+        "host"
+      ],
+      "oxidation_state": 4,
+      "coordination": 6,
+      "pauling_en": 1.6,
+      "shannon_radius_pm": 68,
+      "tm_family": "4d"
+    },
+    "Ta": {
+      "role": [
+        "transition_metal",
+        "dopant_donor"
+      ],
+      "oxidation_state": 5,
+      "coordination": 6,
+      "pauling_en": 1.5,
+      "shannon_radius_pm": 64,
+      "tm_family": "5d",
+      "dopant_on": [
+        "Mo",
+        "Nb"
+      ],
+      "dopant_effect": "raise_mu"
+    },
+    "Ti": {
+      "role": [
+        "transition_metal",
+        "host"
+      ],
+      "oxidation_state": 4,
+      "coordination": 6,
+      "pauling_en": 1.54,
+      "shannon_radius_pm": 60.5,
+      "tm_family": "3d"
+    },
+    "V": {
+      "role": [
+        "transition_metal",
+        "host"
+      ],
+      "oxidation_state": 4,
+      "coordination": 6,
+      "pauling_en": 1.63,
+      "shannon_radius_pm": 58,
+      "tm_family": "3d"
+    },
+    "S": {
+      "role": [
+        "ligand",
+        "chalcogen"
+      ],
+      "oxidation_state": -2,
+      "coordination": 6,
+      "pauling_en": 2.58,
+      "shannon_radius_pm": 184
+    },
+    "Se": {
+      "role": [
+        "ligand",
+        "chalcogen"
+      ],
+      "oxidation_state": -2,
+      "coordination": 6,
+      "pauling_en": 2.55,
+      "shannon_radius_pm": 198
+    },
+    "Te": {
+      "role": [
+        "ligand",
+        "chalcogen"
+      ],
+      "oxidation_state": -2,
+      "coordination": 6,
+      "pauling_en": 2.1,
+      "shannon_radius_pm": 221
+    },
+    "O": {
+      "role": [
+        "ligand",
+        "anion"
+      ],
+      "oxidation_state": -2,
+      "coordination": 6,
+      "pauling_en": 3.44,
+      "shannon_radius_pm": 140
+    },
+    "Br": {
+      "role": [
+        "ligand",
+        "halogen"
+      ],
+      "oxidation_state": -1,
+      "coordination": 6,
+      "pauling_en": 2.96,
+      "shannon_radius_pm": 196
+    },
+    "Cl": {
+      "role": [
+        "ligand",
+        "halogen"
+      ],
+      "oxidation_state": -1,
+      "coordination": 6,
+      "pauling_en": 3.16,
+      "shannon_radius_pm": 181
+    }
+  },
+  "tm_d_u_eV": {
+    "3d": {
+      "U_min": 2.0,
+      "U_max": 4.5,
+      "representative": [
+        "Ti",
+        "V"
+      ]
+    },
+    "4d": {
+      "U_min": 2.2,
+      "U_max": 5.5,
+      "representative": [
+        "Mo",
+        "Nb"
+      ]
+    },
+    "5d": {
+      "U_min": 2.0,
+      "U_max": 5.0,
+      "representative": [
+        "Ta"
+      ]
+    }
+  },
+  "sweep_pool_formulas": [
+    "MoS2",
+    "MoSe2",
+    "NbO2",
+    "NbS2",
+    "NbSe2",
+    "TaS2",
+    "TaSe2",
+    "TiBr2",
+    "TiCl2",
+    "TiO2",
+    "TiS2",
+    "TiSe2",
+    "TiTe2",
+    "VBr2",
+    "VCl2"
+  ],
+  "pair_examples": {
+    "Mo-S": {
+      "delta_chi": 0.42,
+      "E_k_predicted_eV": 1.128,
+      "note": "TMD baseline"
+    },
+    "Nb-S": {
+      "delta_chi": 0.98,
+      "E_k_predicted_eV": 2.163,
+      "note": "Higher gap vs MoS2"
+    },
+    "Ta-S": {
+      "delta_chi": 1.08,
+      "E_k_predicted_eV": 2.348,
+      "note": "Donor dopant on Mo/Nb site"
+    }
+  },
+  "supercell_grids": [
+    {
+      "name": "sqrt3xsqrt3",
+      "denominator": 3,
+      "comment": "hexagonal commensurate supercell"
+    },
+    {
+      "name": "2x2",
+      "denominator": 4,
+      "comment": "square 2x2 TM sublattice"
+    },
+    {
+      "name": "3x3",
+      "denominator": 9,
+      "comment": "square 3x3 TM sublattice"
+    },
+    {
+      "name": "4x4",
+      "denominator": 16,
+      "comment": "square 4x4 TM sublattice"
+    }
+  ]
+}

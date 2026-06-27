@@ -1,0 +1,33 @@
+{
+  "ts": 1782400003,
+  "cores": 1,
+  "sim_path": "bin/nlp-array-sim (MasterCoreSimulator per-core, same as NLP array)",
+  "chip_a": {
+    "chip": "physics_a",
+    "ok": true,
+    "residual": false,
+    "exit": 0,
+    "elapsed_ms": 0.523,
+    "context_head": "physics_chip_a|killer|ab-initio|QE|phonopy|Wannier|fpu_feed_wannier|6-bath|V_k|E_k",
+    "tail": " usize) {\n    |        ^^^^^^^^^^\n\nwarning: function `apply_redirects` is never used\n   --> crates/foliation-engine/src/experimental_v2/foliation_unification.rs:255:4\n    |\n255 | fn apply_redirects(dag: TopologicalDag, redirect: &HashMap<NodeId, NodeId>) -> TopologicalDag {\n    |    ^^^^^^^^^^^^^^^\n\nwarning: function `workspace_artifacts` is never used\n   --> crates/foliation-engine/src/experimental_v2/sha256_hard_sim.rs:122:4\n    |\n122 | fn workspace_artifacts() -> PathBuf {\n    |    ^^^^^^^^^^^^^^^^^^^\n\nnlp-array-sim: 1 核 × 11 pin = 11 bit | master AND=64 | master=out/chip/foliation_chip.aig"
+  },
+  "chip_b": {
+    "chip": "physics_b",
+    "ok": true,
+    "residual": false,
+    "exit": 0,
+    "elapsed_ms": 0.273,
+    "context_head": "physics_chip_b|forge-daemon|extensions_universal_v3.aig|14-bus|Sigma_iwn|DMFT|Universal_AIM|aig=/Users/shanyu/Desktop/foliation-pass-v1/artifacts/gcu_test/exten",
+    "tail": " usize) {\n    |        ^^^^^^^^^^\n\nwarning: function `apply_redirects` is never used\n   --> crates/foliation-engine/src/experimental_v2/foliation_unification.rs:255:4\n    |\n255 | fn apply_redirects(dag: TopologicalDag, redirect: &HashMap<NodeId, NodeId>) -> TopologicalDag {\n    |    ^^^^^^^^^^^^^^^\n\nwarning: function `workspace_artifacts` is never used\n   --> crates/foliation-engine/src/experimental_v2/sha256_hard_sim.rs:122:4\n    |\n122 | fn workspace_artifacts() -> PathBuf {\n    |    ^^^^^^^^^^^^^^^^^^^\n\nnlp-array-sim: 1 核 × 11 pin = 11 bit | master AND=64 | master=out/chip/foliation_chip.aig"
+  },
+  "hea_engine": {
+    "chip": "hea_engine",
+    "ok": true,
+    "residual": false,
+    "exit": 0,
+    "elapsed_ms": 0.216,
+    "context_head": "hea_engine|hea_matrix_algebra|Cantor_NiCoCrFeMn|C_star|Metropolis|Warren-Cowley|SRO",
+    "tail": " usize) {\n    |        ^^^^^^^^^^\n\nwarning: function `apply_redirects` is never used\n   --> crates/foliation-engine/src/experimental_v2/foliation_unification.rs:255:4\n    |\n255 | fn apply_redirects(dag: TopologicalDag, redirect: &HashMap<NodeId, NodeId>) -> TopologicalDag {\n    |    ^^^^^^^^^^^^^^^\n\nwarning: function `workspace_artifacts` is never used\n   --> crates/foliation-engine/src/experimental_v2/sha256_hard_sim.rs:122:4\n    |\n122 | fn workspace_artifacts() -> PathBuf {\n    |    ^^^^^^^^^^^^^^^^^^^\n\nnlp-array-sim: 1 核 × 11 pin = 11 bit | master AND=64 | master=out/chip/foliation_chip.aig"
+  },
+  "all_ok": true
+}

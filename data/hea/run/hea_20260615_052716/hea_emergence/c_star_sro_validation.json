@@ -1,0 +1,140 @@
+{
+  "ts": 1782401676,
+  "run": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716",
+  "c_star_manifest": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/hea_emergence/c_star_composition.json",
+  "structure_apply": {
+    "ok": true,
+    "sqs_rc": 0,
+    "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/sqs/POSCAR",
+    "snapshot": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/lammps/snapshot.xyz",
+    "n_atoms": 125,
+    "tail": "[*] SQS supercell: 125 atoms, a0=12.5511 Å\n[*] POSCAR: /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/sqs/POSCAR\n[*] LAMMPS data: /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/lammps/data.hea\n"
+  },
+  "emergence": {
+    "postprocess_rc": 0,
+    "tail": "[PASS] sro_warren_cowley.json: max|α_ij|=1.0000 — SRO bias detected (journal-grade HEA)\n[PASS] sluggish_diffusion.json: D=-5.149e-15 m²/s @ 1500.0K — sluggish OK\n[PASS] cocktail_strength_map.json: σ_DOS=0.163 eV → σ_y≈2.0 GPa\n>> hea_emergence_verdict: {'journal_grade_hea': True, 'sro': True, 'sluggish_diffusion': True, 'cocktail': True}\n",
+    "sro_warren_cowley": {
+      "status": "PASS",
+      "passed": true,
+      "has_short_range_order": true,
+      "alpha_matrix": {
+        "Mn": {
+          "Mn": 0.08160192713038228,
+          "Cr": -0.07899227140419551,
+          "Ni": -0.04104699583581195,
+          "Co": -0.0727190605239385,
+          "Fe": 0.09665763324299914
+        },
+        "Cr": {
+          "Mn": 0.05949256342957121,
+          "Cr": -0.09361329833770782,
+          "Ni": 0.003744958709429702,
+          "Co": -0.2303149606299213,
+          "Fe": 0.17979002624671914
+        },
+        "Ni": {
+          "Mn": 0.022346368715083664,
+          "Cr": -0.07334988619904825,
+          "Ni": 0.012126992778307755,
+          "Co": 0.010707635009311045,
+          "Fe": 0.06890130353817503
+        },
+        "Co": {
+          "Mn": 0.04040404040404033,
+          "Cr": -0.26262626262626254,
+          "Ni": 0.05764966740576505,
+          "Co": 0.24242424242424243,
+          "Fe": 0.24242424242424243
+        },
+        "Fe": {
+          "Mn": -0.010101010101010166,
+          "Cr": -0.05218855218855212,
+          "Ni": -0.10864745011086474,
+          "Co": 0.05303030303030298,
+          "Fe": 1.0
+        }
+      },
+      "composition": {
+        "Mn": 45,
+        "Cr": 27,
+        "Ni": 41,
+        "Co": 6,
+        "Fe": 6
+      },
+      "fractions": {
+        "Mn": 0.36,
+        "Cr": 0.216,
+        "Ni": 0.328,
+        "Co": 0.048,
+        "Fe": 0.048
+      },
+      "max_abs_alpha": 1.0,
+      "n_neighbors_sampled": 1080,
+      "message": "max|α_ij|=1.0000 — SRO bias detected (journal-grade HEA)"
+    },
+    "sluggish_diffusion": {
+      "status": "PASS",
+      "passed": true,
+      "D_m2_per_s": -5.148643662160825e-15,
+      "T_K": 1500.0,
+      "sluggish": true,
+      "message": "D=-5.149e-15 m²/s @ 1500.0K — sluggish OK"
+    },
+    "cocktail_strength_map": {
+      "status": "PASS",
+      "passed": true,
+      "dos_broadening_eV": 0.162766,
+      "yield_strength_estimate_GPa": 1.953192,
+      "mapping": "σ_y ≈ k · σ_DOS (cocktail / lattice distortion)",
+      "message": "σ_DOS=0.163 eV → σ_y≈2.0 GPa"
+    },
+    "hea_emergence_verdict": {
+      "journal_grade_hea": true,
+      "sro": true,
+      "sluggish_diffusion": true,
+      "cocktail": true
+    },
+    "ok": true
+  },
+  "c_star_sro_validation": {
+    "passed": true,
+    "composition_match": {
+      "ok": true,
+      "structure": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/sqs/POSCAR",
+      "n_atoms": 125,
+      "target": {
+        "Ni": 0.35000000082977173,
+        "Co": 0.05001753037844122,
+        "Cr": 0.19996493758357414,
+        "Fe": 0.05001753037844122,
+        "Mn": 0.35000000082977173
+      },
+      "actual": {
+        "Ni": 0.328,
+        "Co": 0.048,
+        "Cr": 0.216,
+        "Fe": 0.048,
+        "Mn": 0.36
+      },
+      "max_delta": 0.022000000829771715,
+      "tolerance": 0.025
+    },
+    "warren_cowley": {
+      "max_abs_alpha": 1.0,
+      "has_short_range_order": true,
+      "threshold": 0.05,
+      "status": "PASS",
+      "message": "max|α_ij|=1.0000 — SRO bias detected (journal-grade HEA)"
+    },
+    "c_star_applied": true,
+    "journal_note": "C* 组分已写入结构；SRO 回验通过 composition + Warren–Cowley。sluggish/cocktail 仍 PENDING 时 HEA 防火墙 BLOCK_FPU 正确（非 SC 通路）。"
+  },
+  "summary": {
+    "c_star_ok": true,
+    "sro_passed": true,
+    "sluggish_status": "PASS",
+    "cocktail_status": "PASS",
+    "hea_firewall_expected": "BLOCK_FPU",
+    "journal_grade_hea": true
+  }
+}
