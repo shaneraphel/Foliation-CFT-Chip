@@ -1,21 +1,3 @@
-[2026-06-24T13:44:28Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260624_112317.json
-[2026-06-24T13:44:29Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_112317
-[2026-06-24T13:44:33Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_112317 --strict-spectral
-[2026-06-24T13:44:33Z] GCU PRESCREEN FAIL [killer_20260624_112317] verdict=FAIL_GCU_SPECTRAL_STRICT λ=1.00248273 phonopy=BLOCKED
-[2026-06-24T13:44:33Z] Cycle 32 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_32.json
-[2026-06-24T14:22:30Z] Cycle 33 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_33.json
-[2026-06-24T14:24:27Z] SC forge (parallel): killer_20260624_112317
-[2026-06-24T14:24:27Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --blueprint /Users/shanyu/Foliation-Engine/out/chip/blueprint_killer_20260624_112317.json
-[2026-06-24T14:24:32Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py --run-id killer_20260624_112317
-[2026-06-24T14:24:38Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_gcu_phonopy_prescreen.py --run-id killer_20260624_112317
-[2026-06-24T14:24:38Z] GCU PHONOPY FASTPATH [killer_20260624_112317] verdict=PASS_CORE5_PHONOPY_FASTPATH min_proxy_cm1=0.0 fc2_norm=0.08631985 spotcheck=0
-[2026-06-24T14:24:38Z] GCU PRESCREEN PASS [killer_20260624_112317] λ=1.00248273 Δα=-0.00357738 → Phonopy final audit
-[2026-06-24T14:24:38Z] GCU PARASITE VALIDATOR [killer_20260624_112317] external=phonopy role=validation_only
-[2026-06-24T14:24:38Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/gcu_parasitic_validator.py --run-id killer_20260624_112317 --validator phonopy
-[2026-06-24T14:27:29Z] PHONOPY FAIL [killer_20260624_112317] verdict=FAIL_IMAGINARY_PHONON
-[2026-06-24T14:27:29Z] PHONOPY ROOT [killer_20260624_112317]: min -252.49 cm-1 <= -20.0 cm-1
-[2026-06-24T14:27:29Z] PHONOPY DOCKER [killer_20260624_112317]: _1/band.conf" was read as phonopy configuration file.
-Crystal structure was read from "phonopy_disp.yaml".
 Unit of length: angstrom
 Band structure and mesh sampling mode
 Settings:
@@ -198,3 +180,21 @@ Summary of calculation was written in "phonopy.yaml".
 [2026-06-25T15:34:36Z] >> /usr/local/bin/python3 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
 [2026-06-25T15:34:36Z] >> /usr/local/bin/python3 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
 [2026-06-25T15:34:38Z] Cycle 36 complete → /Users/shanyu/Foliation-Engine/out/chip/crystal_forge/cycle_36.json
+[2026-06-28T03:13:29Z] Crystal Forge daemon — dual track infinite loop
+[2026-06-28T03:13:33Z] SC forge (parallel): killer_20260616_050648
+[2026-06-28T03:13:33Z] SC forge (parallel): killer_20260616_072815
+[2026-06-28T03:13:33Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260616_072815
+[2026-06-28T03:13:33Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260616_050648
+[2026-06-28T03:13:34Z] SC forge RETRYABLE [killer_20260616_072815] stage=decode ok=False — not marking sc_done
+[2026-06-28T03:13:34Z] SC forge RETRYABLE [killer_20260616_050648] stage=decode ok=False — not marking sc_done
+[2026-06-28T03:13:34Z] HEA forge cycle
+[2026-06-28T03:13:34Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-28T03:15:12Z] Crystal Forge daemon — dual track infinite loop
+[2026-06-28T03:15:15Z] SC forge (parallel): killer_20260616_050648
+[2026-06-28T03:15:15Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260616_050648
+[2026-06-28T03:15:15Z] SC forge (parallel): killer_20260616_072815
+[2026-06-28T03:15:15Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/decode_theta_to_chemistry.py --j-threshold 0.05 --run-id killer_20260616_072815
+[2026-06-28T03:15:16Z] SC forge RETRYABLE [killer_20260616_072815] stage=decode ok=False — not marking sc_done
+[2026-06-28T03:15:16Z] SC forge RETRYABLE [killer_20260616_050648] stage=decode ok=False — not marking sc_done
+[2026-06-28T03:15:16Z] HEA forge cycle
+[2026-06-28T03:15:16Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json

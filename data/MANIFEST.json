@@ -1,7 +1,7 @@
 {
   "package": "foliation-cft-chip",
-  "version": "0.2.0",
-  "ts": 1782532529,
+  "version": "0.3.0",
+  "ts": 1782658821,
   "excludes": [
     "GCU verilog/AIG/ROM",
     "nlp_array",
@@ -24,13 +24,18 @@
       "crystal_evidence_ledger.py",
       "crystal_forge_daemon.py",
       "crystal_synthesis_gate.py",
+      "foliation_artifact_paths.py",
+      "foliation_icloud_mount.py",
       "physics_chip_verify.py"
     ],
     "bin": [
       "chip-dual-batch-sweeper",
       "chip-fpu-mcmc-anneal",
       "chip-hea-thermo-anneal",
-      "chip-sc-fpu-batch"
+      "chip-icloud-env.sh",
+      "chip-icloud-mount",
+      "chip-sc-fpu-batch",
+      "crystal-forge-daemon"
     ],
     "scripts": [
       "data_harvester/common.py",
@@ -356,5 +361,18 @@
       "blueprint_killer_20260625_213403.json",
       "blueprint_manifest.json"
     ]
+  },
+  "forge_checkpoint": {
+    "cycles": 36,
+    "sc_done": [
+      "killer_20260615_075958",
+      "killer_20260615_122305",
+      "killer_20260624_112317",
+      "killer_20260624_222331",
+      "killer_20260625_173803",
+      "killer_20260625_213403",
+      "killer_20260625_215721"
+    ],
+    "hea_done": false
   }
 }

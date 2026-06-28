@@ -21,11 +21,16 @@ from typing import Any
 ENGINE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ENGINE))
 
+from tools.foliation_artifact_paths import icloud_root  # noqa: E402
+
 PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliation-pass-v1"))
 README = ENGINE / "README.md"
-STATE_PATH = ENGINE / "out" / "chip" / "crystal_forge" / "state.json"
-HALL_PATH = ENGINE / "artifacts" / "crystal_forge" / "hall_of_fame.json"
-LOG_PATH = ENGINE / "out" / "chip" / "crystal_forge" / "forge.log"
+_ICLOUD = icloud_root()
+_CF_BASE = (_ICLOUD / "out/chip/crystal_forge") if _ICLOUD else (ENGINE / "out/chip/crystal_forge")
+_ART_BASE = (_ICLOUD / "artifacts") if _ICLOUD else (ENGINE / "artifacts")
+STATE_PATH = _CF_BASE / "state.json"
+HALL_PATH = _ART_BASE / "crystal_forge" / "hall_of_fame.json"
+LOG_PATH = _CF_BASE / "forge.log"
 
 DECODE = PASS_V1 / "scripts/oracle/decode_theta_to_chemistry.py"
 BUILD_POSCAR = PASS_V1 / "scripts/oracle/build_decoded_structure.py"
@@ -109,7 +114,10 @@ def discover_sc_run_ids(*, limit: int = 10) -> list[str]:
 
     def _has_fpu_feed(run_id: str) -> bool:
         hubbard = PASS_V1 / "artifacts/abinitio/runs" / run_id / "fpu_feed/hubbard_params.json"
-        return hubbard.is_file()
+        try:
+            return hubbard.is_file()
+        except OSError:
+            return False
 
     batch = ENGINE / "out/chip/sc_fpu_batch_report.json"
     if batch.is_file():
@@ -133,9 +141,16 @@ def discover_sc_run_ids(*, limit: int = 10) -> list[str]:
         for bp in sorted(BLUEPRINT_DIR.glob("blueprint_*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
             try:
                 rid = json.loads(bp.read_text(encoding="utf-8")).get("run_id") or bp.stem.replace("blueprint_", "")
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, OSError, TimeoutError):
                 rid = bp.stem.replace("blueprint_", "")
             if rid and rid_re.match(rid) and rid not in seen and _has_fpu_feed(rid):
+                seen.add(rid)
+                ids.append(rid)
+    runs_root = PASS_V1 / "artifacts/abinitio/runs"
+    if runs_root.is_dir():
+        for run_dir in sorted(runs_root.glob("killer_*"), key=lambda p: p.name, reverse=True):
+            rid = run_dir.name
+            if rid_re.match(rid) and rid not in seen and _has_fpu_feed(rid):
                 seen.add(rid)
                 ids.append(rid)
     return ids[:limit]
@@ -532,7 +547,7 @@ def run_cycle(
             state["hea_last_closure"] = datetime.now(timezone.utc).isoformat()
 
     save_state(state)
-    report_path = ENGINE / "out/chip/crystal_forge" / f"cycle_{state['cycles']}.json"
+    report_path = _CF_BASE / f"cycle_{state['cycles']}.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     _log(f"Cycle {state['cycles']} complete → {report_path}")

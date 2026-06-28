@@ -1,5 +1,5 @@
 {
-  "ts": 1782401668,
+  "ts": 1782613865,
   "system": "Cantor Ni-Co-Cr-Fe-Mn HEA",
   "elements": [
     "Ni",
@@ -12,7 +12,7 @@
     "gamma": 0.03,
     "t_start": 2.0,
     "t_end": 0.001,
-    "n_steps": 50000,
+    "n_steps": 1000,
     "seed": 7,
     "temperature_k": 298.15,
     "delta_max": 0.066,
@@ -26,22 +26,22 @@
     0.2
   ],
   "c_star": [
-    0.35000000082977173,
-    0.05001753037844122,
-    0.19996493758357414,
-    0.05001753037844122,
-    0.35000000082977173
+    0.3499349537715856,
+    0.04999999916368299,
+    0.20013009412946287,
+    0.04999999916368299,
+    0.3499349537715856
   ],
-  "l_best": -8.942039936796547,
-  "delta_h_kj_mol": -5.579807161109798,
-  "delta_s_kj_k": 0.01127698398687489,
-  "delta_mismatch": 0.021542952178275822,
-  "accepts": 41382,
-  "steps": 50000,
-  "proposals": 49858,
-  "rejected_infeasible": 142,
-  "elapsed_ms": 35,
-  "steps_per_sec": 1420269.6279629276,
+  "l_best": -8.941603126231488,
+  "delta_h_kj_mol": -5.579310485326066,
+  "delta_s_kj_k": 0.011277184775802186,
+  "delta_mismatch": 0.02154183324723899,
+  "accepts": 823,
+  "steps": 1000,
+  "proposals": 999,
+  "rejected_infeasible": 1,
+  "elapsed_ms": 0,
+  "steps_per_sec": 2264574.803434907,
   "mass_production_ready": true,
   "limitation": "HEA 矩阵退火已接通 abinitio_mcweeny 同构核；批量 CIF→SRO 验证仍走 pass-v1 hea_emergence",
   "matrix_kernel": "hea_matrix_algebra::hardwired_dot_product + hardwired_matrix_vector (twin of abinitio_mcweeny)"

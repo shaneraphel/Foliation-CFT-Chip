@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$ROOT/bin/chip-icloud-env.sh"
+exec python3 "$ROOT/tools/foliation_icloud_mount.py" "$@"

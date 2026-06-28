@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$ROOT/bin/chip-icloud-env.sh"
+export FOLIATION_ENGINE_ROOT="$ROOT"
+exec python3 "$ROOT/tools/crystal_forge_daemon.py" "$@"

@@ -1,11 +1,23 @@
-# Foliation CFT Chip — Data & Results Release **v0.2.0**
+# Foliation CFT Chip — Data & Results Release **v0.3.0**
 
 **SC / HEA 计算产物** + **多源数据收割管线** + **CFT / FPU / QE 加速芯片网表**（sky130 流片结果）。
 
 > **本包不含**：GCU、NLP 阵列、Yosys/OpenROAD/`foliation-eda` 等 EDA 工具链、完整 Rust 引擎源码。  
-> 复现计算需自备 [Foliation-Engine](https://github.com/) 主仓与 `foliation-pass-v1` 环境。
+> 复现计算需自备 Foliation-Engine 主仓与 `foliation-pass-v1` 环境。
 
 **作者 / Author:** Shan Yu
+
+---
+
+## v0.3.0 更新（2026-06-28）
+
+| 项目 | 内容 |
+|------|------|
+| **Crystal Forge** | 热重启 checkpoint：`cycles=36`，`sc_done=7` killer；iCloud 直读零 pull |
+| **iCloud 挂载** | `foliation_icloud_mount.py` + `chip-icloud-mount` symlink 重资产到 iCloud Archive |
+| **Forge 管线** | `crystal_forge_daemon` 支持 `FOLIATION_USE_ICLOUD=1`；decode 重试 + HEA anneal 续跑 |
+| **物理验算** | `PHYSICS_SIM_OK.json` 全绿；Docker/QE 容器恢复可用 |
+| **SC killer 池** | 保留 v0.2.0 多源 harvest + 新增 forge cycle 报告至 cycle_36 |
 
 ---
 
