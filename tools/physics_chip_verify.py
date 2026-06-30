@@ -13,8 +13,10 @@ PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliati
 ENGINE = Path(__file__).resolve().parents[1]
 if str(ENGINE) not in sys.path:
     sys.path.insert(0, str(ENGINE))
+from tools.foliation_chip_paths import materialize_chip_netlists, universal_fpu_aig  # noqa: E402
+
 HEA_RUN = PASS_V1 / "artifacts/abinitio/runs/hea_20260615_052716"
-AIG = PASS_V1 / "artifacts/gcu_test/extensions_universal_v3.aig"
+AIG = universal_fpu_aig()
 REPORT = PASS_V1 / "artifacts/physics_chip_verify_report.json"
 HEA_CLOSURE = ENGINE / "tools/chip_hea_cstar_closure.py"
 C_STAR_REPORT = ENGINE / "out/chip/hea_thermo_full.json"
@@ -253,6 +255,9 @@ def main() -> int:
     ap.add_argument("--sc-fpu-anneal", action="store_true", help="14D FPU Metropolis on --run")
     ap.add_argument("--sc-anneal-steps", type=int, default=30)
     args = ap.parse_args()
+
+    materialize_chip_netlists()
+    exit_if_not_simulated(tool="physics_chip_verify", require=("chip_a", "chip_b"))
 
     hea_run = (args.hea_run or HEA_RUN).resolve()
     sc_run = args.run

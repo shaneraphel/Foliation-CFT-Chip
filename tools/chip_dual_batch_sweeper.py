@@ -17,7 +17,7 @@ sys.path.insert(0, str(ENGINE))
 from tools.chip_physics_sim_gate import exit_if_not_simulated  # noqa: E402
 from tools.chip_nlp_bridge import nlp_array_tick, physics_phase6_brief  # noqa: E402
 
-PASS_V1 = Path.home() / "Desktop" / "foliation-pass-v1"
+PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliation-pass-v1"))
 HEA_RUN = PASS_V1 / "artifacts/abinitio/runs/hea_20260615_052716"
 HEA_THERMO = ENGINE / "out/chip/hea_thermo_full.json"
 HEA_CLOSURE = ENGINE / "tools/chip_hea_cstar_closure.py"

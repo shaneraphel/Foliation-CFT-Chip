@@ -15,7 +15,7 @@ sys.path.insert(0, str(ENGINE))
 
 from tools.chip_physics_sim_gate import exit_if_not_simulated  # noqa: E402
 
-PASS_V1 = Path.home() / "Desktop" / "foliation-pass-v1"
+PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliation-pass-v1"))
 FPU_BATCH = ENGINE / "tools/chip_fpu_mcmc_anneal.py"
 PHYSICS = ENGINE / "tools/physics_chip_verify.py"
 RUNS = PASS_V1 / "artifacts/abinitio/runs"

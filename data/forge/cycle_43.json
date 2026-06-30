@@ -1,0 +1,194 @@
+{
+  "cycle": 43,
+  "sc": [
+    {
+      "run_id": "killer_20260616_050648",
+      "track": "SC",
+      "decode": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"verdict\": \"PASS_SYNTHESIS_RECIPE\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260616_050648.json\",\n  \"accepted_formula\": \"MoS2\",\n  \"J_recheck\": 0.07017709945168038\n}\n",
+        "stderr": "decode=PASS_SYNTHESIS_RECIPE formula=MoS2 J_recheck=0.070 tries=1\n"
+      },
+      "decode_verdict": "PASS_SYNTHESIS_RECIPE",
+      "poscar": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"run_id\": \"killer_20260616_050648\",\n  \"formula\": \"MoS2\",\n  \"nat\": 12,\n  \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR\",\n  \"out_dir\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648\"\n}\n",
+        "stderr": "/Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py:107: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.\n  struct = CifParser(str(parent_cif)).parse_structures(primitive=False)[0]\nstructure=MoS2 nat=12 poscar=POSCAR\n"
+      },
+      "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+      "gcu_prescreen": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "  ],\n      \"h_norm\": [\n        [\n          -1.0,\n          -0.011727435771872127\n        ],\n        [\n          -0.011727435771872127,\n          -1.0\n        ]\n      ],\n      \"scale_ev\": 35.28,\n      \"nn_hop_ev\": 1.1937139999294784,\n      \"source\": \"CORE_5_BORN_UNROLL\"\n    },\n    \"warning\": \"Core 5 physical tensors found. Ignoring wannier90_hr.dat completely.\"\n  },\n  \"gcu_core_sim\": {\n    \"exterior_routing_jw\": {\n      \"hop_out\": -1000,\n      \"coulomb_out\": -500,\n      \"jw_sign\": 1,\n      \"ok\": true\n    },\n    \"exterior_routing_rom\": {\n      \"ok\": true\n    },\n    \"spinor_projection\": {\n      \"out_q16\": [\n        32768.0,\n        -16384.0,\n        0\n      ],\n      \"out_norm\": [\n        1.0,\n        -0.5,\n        0.0\n      ],\n      \"ok\": true\n    },\n    \"einstein_contraction\": {\n      \"C\": [\n        [\n          19,\n          22\n        ],\n        [\n          43,\n          50\n        ]\n      ],\n      \"ok\": true\n    },\n    \"spectral_extractor\": {\n      \"delta_alpha\": 3,\n      \"valid\": true,\n      \"ok\": true\n    },\n    \"superoperator_chain\": {\n      \"lambda_max\": 0.925066,\n      \"delta_alpha\": 0.112372,\n      \"ok\": true\n    }\n  },\n  \"wannier_hr\": \"\",\n  \"hubbard\": \"\",\n  \"h_block\": {\n    \"num_wann\": 12,\n    \"h_raw\": [\n      [\n        -35.28,\n        -0.41374393403164866\n      ],\n      [\n        -0.41374393403164866,\n        -35.28\n      ]\n    ],\n    \"h_norm\": [\n      [\n        -1.0,\n        -0.011727435771872127\n      ],\n      [\n        -0.011727435771872127,\n        -1.0\n      ]\n    ],\n    \"scale_ev\": 35.28,\n    \"nn_hop_ev\": 1.1937139999294784,\n    \"source\": \"CORE_5_BORN_UNROLL\"\n  },\n  \"spectral_proxy\": {\n    \"lambda_max\": 1.0235924,\n    \"delta_alpha_log2\": -0.03364135,\n    \"soft_mode_risk\": true,\n    \"strict_block\": false\n  },\n  \"gcu_phonopy_fastpath\": {\n    \"schema\": \"foliation.core5_phonopy_fastpath.v1\",\n    \"source\": \"CORE_5_BORN_UNROLL\",\n    \"run_id\": \"killer_20260616_050648\",\n    \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR\",\n    \"core5_tensor_artifact\": \"/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json\",\n    \"force_constants_proxy\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/FORCE_CONSTANTS_CORE5_PROXY\",\n    \"num_atoms\": 12,\n    \"used_hops\": 132,\n    \"fc2_norm\": 0.73481034,\n    \"min_proxy_cm1\": 0.0,\n    \"spotcheck_displacements\": 0,\n    \"verdict\": \"PASS_CORE5_PHONOPY_FASTPATH\",\n    \"note\": \"Core 5 Born-unroll force-constant proxy; external Phonopy remains final audit only.\",\n    \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/core5_phonopy_fastpath.json\"\n  },\n  \"elapsed_s\": 3.075,\n  \"spectral_warning\": \"SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_prescreen_killer_20260616_050648.json\"\n}\nverdict=PASS_GCU_PRESCREEN phonopy_docker=FINAL_AUDIT_ONLY\n",
+        "stderr": ""
+      },
+      "gcu_prescreen_body": {
+        "schema": "foliation.gcu_phonopy_prescreen.v1",
+        "ts": "2026-06-30T05:10:21.982359+00:00",
+        "run_id": "killer_20260616_050648",
+        "passed": true,
+        "verdict": "PASS_GCU_PRESCREEN",
+        "pipeline": [
+          "chip_a/chip_b physics sim",
+          "Core5 Born-unroll→ROM core1 burn (Wannier fallback only)",
+          "GCU 5-core reference sim",
+          "superoperator spectral proxy"
+        ],
+        "phonopy_docker": "FINAL_AUDIT_ONLY",
+        "chip_sim": {
+          "chip_a_ok": true,
+          "chip_b_ok": true
+        },
+        "rom_burn": {
+          "source": "CORE_5_BORN_UNROLL",
+          "mapped_hops": 144,
+          "long_range_hops": 132,
+          "mem": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_weights.mem",
+          "index": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_index.mem",
+          "meta": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_weights.meta.json",
+          "verilog": "/Users/shanyu/Foliation-Engine/out/chip/gcu_hamiltonian/verilog/gcu_exterior_routing_killer_20260616_050648.v",
+          "tensor_artifact": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json",
+          "num_wann": 12,
+          "r_max": 0,
+          "index_depth": 144,
+          "h_block": {
+            "num_wann": 12,
+            "h_raw": [
+              [
+                -35.28,
+                -0.41374393403164866
+              ],
+              [
+                -0.41374393403164866,
+                -35.28
+              ]
+            ],
+            "h_norm": [
+              [
+                -1.0,
+                -0.011727435771872127
+              ],
+              [
+                -0.011727435771872127,
+                -1.0
+              ]
+            ],
+            "scale_ev": 35.28,
+            "nn_hop_ev": 1.1937139999294784,
+            "source": "CORE_5_BORN_UNROLL"
+          },
+          "warning": "Core 5 physical tensors found. Ignoring wannier90_hr.dat completely."
+        },
+        "gcu_core_sim": {
+          "exterior_routing_jw": {
+            "hop_out": -1000,
+            "coulomb_out": -500,
+            "jw_sign": 1,
+            "ok": true
+          },
+          "exterior_routing_rom": {
+            "ok": true
+          },
+          "spinor_projection": {
+            "out_q16": [
+              32768.0,
+              -16384.0,
+              0
+            ],
+            "out_norm": [
+              1.0,
+              -0.5,
+              0.0
+            ],
+            "ok": true
+          },
+          "einstein_contraction": {
+            "C": [
+              [
+                19,
+                22
+              ],
+              [
+                43,
+                50
+              ]
+            ],
+            "ok": true
+          },
+          "spectral_extractor": {
+            "delta_alpha": 3,
+            "valid": true,
+            "ok": true
+          },
+          "superoperator_chain": {
+            "lambda_max": 0.925066,
+            "delta_alpha": 0.112372,
+            "ok": true
+          }
+        },
+        "wannier_hr": "",
+        "hubbard": "",
+        "h_block": {
+          "num_wann": 12,
+          "h_raw": [
+            [
+              -35.28,
+              -0.41374393403164866
+            ],
+            [
+              -0.41374393403164866,
+              -35.28
+            ]
+          ],
+          "h_norm": [
+            [
+              -1.0,
+              -0.011727435771872127
+            ],
+            [
+              -0.011727435771872127,
+              -1.0
+            ]
+          ],
+          "scale_ev": 35.28,
+          "nn_hop_ev": 1.1937139999294784,
+          "source": "CORE_5_BORN_UNROLL"
+        },
+        "spectral_proxy": {
+          "lambda_max": 1.0235924,
+          "delta_alpha_log2": -0.03364135,
+          "soft_mode_risk": true,
+          "strict_block": false
+        },
+        "gcu_phonopy_fastpath": {
+          "schema": "foliation.core5_phonopy_fastpath.v1",
+          "source": "CORE_5_BORN_UNROLL",
+          "run_id": "killer_20260616_050648",
+          "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+          "core5_tensor_artifact": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json",
+          "force_constants_proxy": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/FORCE_CONSTANTS_CORE5_PROXY",
+          "num_atoms": 12,
+          "used_hops": 132,
+          "fc2_norm": 0.73481034,
+          "min_proxy_cm1": 0.0,
+          "spotcheck_displacements": 0,
+          "verdict": "PASS_CORE5_PHONOPY_FASTPATH",
+          "note": "Core 5 Born-unroll force-constant proxy; external Phonopy remains final audit only.",
+          "out": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/core5_phonopy_fastpath.json"
+        },
+        "elapsed_s": 3.075,
+        "spectral_warning": "SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED"
+      },
+      "phonopy": {
+        "skipped": true,
+        "reason": "gcu_fastpath_only"
+      },
+      "ok": true,
+      "stage": "gcu_fastpath_only"
+    }
+  ],
+  "hea": null,
+  "god_mode": null
+}

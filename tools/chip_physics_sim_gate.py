@@ -14,10 +14,13 @@ from pathlib import Path
 
 ENGINE = Path(__file__).resolve().parents[1]
 PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliation-pass-v1"))
+sys.path.insert(0, str(ENGINE))
+from tools.foliation_chip_paths import materialize_chip_netlists, universal_fpu_aig  # noqa: E402
+
 MARKER = ENGINE / "out/chip/PHYSICS_SIM_OK.json"
 SIM_LOG = ENGINE / "out/chip/logs/physics_sim_gate.json"
 NLP_SIM = ENGINE / "bin/nlp-array-sim"
-UNIVERSAL_AIG = PASS_V1 / "artifacts/gcu_test/extensions_universal_v3.aig"
+UNIVERSAL_AIG = universal_fpu_aig()
 GOD_MODE = PASS_V1 / "scripts/god_mode_mass_sweeper.py"
 GOD_LOG = PASS_V1 / "artifacts/god_mode_mcmc.log"
 DUAL_BATCH = ENGINE / "tools/chip_dual_batch_sweeper.py"
@@ -80,6 +83,8 @@ def sim_tick(context: str, *, chip: str) -> dict:
 
 
 def run_physics_sim(*, include_hea: bool = True) -> dict:
+    if os.environ.get("CHIP_PHYSICS_SIM_SKIP", "").lower() not in ("1", "true", "yes"):
+        materialize_chip_netlists()
     aig_note = str(UNIVERSAL_AIG) if UNIVERSAL_AIG.is_file() else "missing_aig"
     chip_a = sim_tick(CHIP_A_CTX, chip="physics_a")
     chip_b = sim_tick(f"{CHIP_B_CTX}|aig={aig_note}", chip="physics_b")

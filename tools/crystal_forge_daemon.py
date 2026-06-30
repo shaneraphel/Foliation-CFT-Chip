@@ -27,10 +27,12 @@ PASS_V1 = Path(os.environ.get("PASS_V1_ROOT", Path.home() / "Desktop" / "foliati
 README = ENGINE / "README.md"
 _ICLOUD = icloud_root()
 _CF_BASE = (_ICLOUD / "out/chip/crystal_forge") if _ICLOUD else (ENGINE / "out/chip/crystal_forge")
+_CHIP_OUT = (_ICLOUD / "out/chip") if _ICLOUD else (ENGINE / "out/chip")
 _ART_BASE = (_ICLOUD / "artifacts") if _ICLOUD else (ENGINE / "artifacts")
 STATE_PATH = _CF_BASE / "state.json"
 HALL_PATH = _ART_BASE / "crystal_forge" / "hall_of_fame.json"
 LOG_PATH = _CF_BASE / "forge.log"
+_STAGE = ENGINE / "out/chip/_forge_stage"
 
 DECODE = PASS_V1 / "scripts/oracle/decode_theta_to_chemistry.py"
 BUILD_POSCAR = PASS_V1 / "scripts/oracle/build_decoded_structure.py"
@@ -45,6 +47,14 @@ SC_BATCH = ENGINE / "tools/chip_sc_fpu_batch.py"
 BLUEPRINT_DIR = PASS_V1 / "artifacts/oracle/theta_blueprint"
 DECODE_DIR = PASS_V1 / "artifacts/oracle"
 HEA_RUN = PASS_V1 / "artifacts/abinitio/runs/hea_20260615_052716"
+HEA_RUN_ICLOUD = (_ICLOUD / "pass-v1-artifacts/abinitio/runs/hea_20260615_052716") if _ICLOUD else None
+HEA_VAL_CACHE = ENGINE / "out/chip/hea_c_star_sro_validation.json"
+PASS_PYTHON = Path(
+    os.environ.get(
+        "FOLIATION_PASS_PYTHON",
+        "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    )
+)
 
 CRYSTAL_MARKER_BEGIN = "<!-- SYNTHESIZED_CRYSTALS:BEGIN -->"
 CRYSTAL_MARKER_END = "<!-- SYNTHESIZED_CRYSTALS:END -->"
@@ -85,6 +95,41 @@ def _run(cmd: list[str], *, cwd: Path | None = None, timeout: int = 7200) -> dic
     }
 
 
+def _stage_file(src: Path, name: str) -> Path | None:
+    if not src.is_file():
+        return None
+    dst = _STAGE / name
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        dst.write_bytes(src.read_bytes())
+        return dst
+    except OSError:
+        return None
+
+
+def _safe_read_json(path: Path) -> dict[str, Any]:
+    for candidate in (path, HEA_VAL_CACHE):
+        if not candidate.is_file():
+            continue
+        try:
+            data = json.loads(candidate.read_text(encoding="utf-8"))
+            if candidate == path and path != HEA_VAL_CACHE:
+                HEA_VAL_CACHE.parent.mkdir(parents=True, exist_ok=True)
+                HEA_VAL_CACHE.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+            return data if isinstance(data, dict) else {}
+        except (OSError, TimeoutError, json.JSONDecodeError):
+            continue
+    return {}
+
+
+def _resolve_hea_run() -> Path:
+    if HEA_RUN.is_dir():
+        return HEA_RUN
+    if HEA_RUN_ICLOUD and HEA_RUN_ICLOUD.is_dir():
+        return HEA_RUN_ICLOUD
+    return HEA_RUN
+
+
 def load_state() -> dict[str, Any]:
     if STATE_PATH.is_file():
         return json.loads(STATE_PATH.read_text(encoding="utf-8"))
@@ -119,7 +164,9 @@ def discover_sc_run_ids(*, limit: int = 10) -> list[str]:
         except OSError:
             return False
 
-    batch = ENGINE / "out/chip/sc_fpu_batch_report.json"
+    batch = _CHIP_OUT / "sc_fpu_batch_report.json"
+    if not batch.is_file():
+        batch = ENGINE / "out/chip/sc_fpu_batch_report.json"
     if batch.is_file():
         try:
             rep = json.loads(batch.read_text(encoding="utf-8"))
@@ -135,17 +182,26 @@ def discover_sc_run_ids(*, limit: int = 10) -> list[str]:
                 ):
                     seen.add(rid)
                     ids.append(rid)
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, OSError, TimeoutError):
             pass
-    if BLUEPRINT_DIR.is_dir():
-        for bp in sorted(BLUEPRINT_DIR.glob("blueprint_*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
+    for bp_dir in (_CHIP_OUT, BLUEPRINT_DIR):
+        if not bp_dir.is_dir():
+            continue
+        try:
+            bps = sorted(bp_dir.glob("blueprint_killer_*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
+        except OSError:
+            continue
+        for bp in bps:
             try:
                 rid = json.loads(bp.read_text(encoding="utf-8")).get("run_id") or bp.stem.replace("blueprint_", "")
             except (json.JSONDecodeError, OSError, TimeoutError):
                 rid = bp.stem.replace("blueprint_", "")
-            if rid and rid_re.match(rid) and rid not in seen and _has_fpu_feed(rid):
-                seen.add(rid)
-                ids.append(rid)
+            if rid and rid_re.match(rid) and rid not in seen:
+                if _has_fpu_feed(rid) or bp_dir == _CHIP_OUT:
+                    seen.add(rid)
+                    ids.append(rid)
+    if _ICLOUD:
+        return ids[:limit]
     runs_root = PASS_V1 / "artifacts/abinitio/runs"
     if runs_root.is_dir():
         for run_dir in sorted(runs_root.glob("killer_*"), key=lambda p: p.name, reverse=True):
@@ -186,6 +242,23 @@ def _should_mark_sc_done(row: dict[str, Any]) -> bool:
     return False
 
 
+def _resolve_blueprint_path(run_id: str) -> Path | None:
+    for path in (
+        _CHIP_OUT / f"blueprint_{run_id}.json",
+        ENGINE / f"out/chip/blueprint_{run_id}.json",
+    ):
+        if path.is_file():
+            return path
+    bp_pass = BLUEPRINT_DIR / f"blueprint_{run_id}.json"
+    if not bp_pass.is_file():
+        return None
+    try:
+        json.loads(bp_pass.read_text(encoding="utf-8"))
+        return bp_pass
+    except (OSError, TimeoutError, json.JSONDecodeError):
+        return None
+
+
 def sc_track_one(
     run_id: str,
     *,
@@ -199,11 +272,13 @@ def sc_track_one(
         return {**rep, "ok": False, "error": "missing decode_theta_to_chemistry.py"}
 
     bp_path = BLUEPRINT_DIR / f"blueprint_{run_id}.json"
-    local_bp = ENGINE / f"out/chip/blueprint_{run_id}.json"
+    local_bp = _resolve_blueprint_path(run_id)
     decode_cmd = [sys.executable, str(DECODE), "--j-threshold", str(j_threshold)]
     
-    if not bp_path.is_file() and not local_bp.is_file():
-        batch = ENGINE / "out/chip/sc_fpu_batch_report.json"
+    if local_bp is None:
+        batch = _CHIP_OUT / "sc_fpu_batch_report.json"
+        if not batch.is_file():
+            batch = ENGINE / "out/chip/sc_fpu_batch_report.json"
         if batch.is_file():
             try:
                 rep_data = json.loads(batch.read_text(encoding="utf-8"))
@@ -224,18 +299,25 @@ def sc_track_one(
                             "sigma_iwn": fpu.get("sigma_at_best"),
                             "J_BKT": fpu.get("j_best"),
                         }
+                        local_bp = _CHIP_OUT / f"blueprint_{run_id}.json"
+                        local_bp.parent.mkdir(parents=True, exist_ok=True)
                         local_bp.write_text(json.dumps(bp), encoding="utf-8")
                         break
-            except Exception:
+            except (OSError, TimeoutError, json.JSONDecodeError):
                 pass
 
-    if local_bp.is_file():
-        decode_cmd.extend(["--blueprint", str(local_bp)])
+    if local_bp is not None:
+        staged_bp = _stage_file(local_bp, f"blueprint_{run_id}.json") or local_bp
+        decode_cmd.extend(["--blueprint", str(staged_bp)])
+        lookup = PASS_V1 / "artifacts/oracle/physics_lookup_v1.json"
+        staged_lookup = _stage_file(lookup, "physics_lookup_v1.json")
+        if staged_lookup:
+            decode_cmd.extend(["--lookup", str(staged_lookup)])
     else:
-        decode_cmd.extend(["--run-id", run_id])
+        return {**rep, "ok": False, "stage": "decode", "error": f"missing blueprint for {run_id}"}
 
     dec = _run(
-        decode_cmd,
+        [str(PASS_PYTHON), *decode_cmd[1:]],
         cwd=PASS_V1,
         timeout=600,
     )
@@ -259,7 +341,7 @@ def sc_track_one(
 
     if not BUILD_POSCAR.is_file():
         return {**rep, "ok": False, "error": "missing build_decoded_structure.py"}
-    pos = _run([sys.executable, str(BUILD_POSCAR), "--run-id", run_id], cwd=PASS_V1, timeout=300)
+    pos = _run([str(PASS_PYTHON), str(BUILD_POSCAR), "--run-id", run_id], cwd=PASS_V1, timeout=300)
     rep["poscar"] = pos
     poscar = PASS_V1 / "artifacts/oracle/decoded_structures" / run_id / "POSCAR"
     rep["poscar_path"] = str(poscar)
@@ -366,9 +448,10 @@ def _hall_entry_from_sc(run_id: str, decode: dict, rep: dict) -> dict[str, Any]:
 
 
 def hea_track_one(*, anneal_steps: int, skip_phonopy: bool) -> dict[str, Any]:
-    rep: dict[str, Any] = {"track": "HEA", "hea_run": str(HEA_RUN)}
-    if not HEA_RUN.is_dir():
-        return {**rep, "ok": False, "error": f"missing HEA run {HEA_RUN}"}
+    hea_run = _resolve_hea_run()
+    rep: dict[str, Any] = {"track": "HEA", "hea_run": str(hea_run)}
+    if not hea_run.is_dir():
+        return {**rep, "ok": False, "error": f"missing HEA run {hea_run}"}
 
     thermo_out = ENGINE / "out/chip/hea_thermo_full.json"
     ann = _run(
@@ -385,30 +468,33 @@ def hea_track_one(*, anneal_steps: int, skip_phonopy: bool) -> dict[str, Any]:
             sys.executable,
             str(HEA_CLOSURE),
             "--run",
-            str(HEA_RUN),
+            str(hea_run),
             "--c-star",
             str(c_star),
         ],
         timeout=600,
     )
     rep["closure"] = clo
-    val = HEA_RUN / "hea_emergence/c_star_sro_validation.json"
-    summary = json.loads(val.read_text(encoding="utf-8")).get("summary", {}) if val.is_file() else {}
+    val = hea_run / "hea_emergence/c_star_sro_validation.json"
+    summary = _safe_read_json(val).get("summary", {})
     rep["c_star_summary"] = summary
     if not clo["ok"] or not summary.get("c_star_ok"):
+        if clo["ok"] and not summary:
+            rep["closure_read_warn"] = "validation_json_unreadable"
+            return {**rep, "ok": False, "stage": "closure", "retryable": True}
         return {**rep, "ok": False, "stage": "closure"}
 
     if HEA_BOOTSTRAP.is_file():
-        boot = _run([sys.executable, str(HEA_BOOTSTRAP), "--run", str(HEA_RUN)], timeout=600)
+        boot = _run([sys.executable, str(HEA_BOOTSTRAP), "--run", str(hea_run)], timeout=600)
         rep["hea_bootstrap"] = boot
         post = _run(
-            [sys.executable, str(PASS_V1 / "scripts/abinitio_pipeline/postprocess_hea_emergence.py"), "--run", str(HEA_RUN)],
+            [sys.executable, str(PASS_V1 / "scripts/abinitio_pipeline/postprocess_hea_emergence.py"), "--run", str(hea_run)],
             cwd=PASS_V1,
             timeout=300,
         )
         rep["hea_emergence_refresh"] = post
 
-    poscar = HEA_RUN / "sqs/POSCAR"
+    poscar = hea_run / "sqs/POSCAR"
     rep["poscar_path"] = str(poscar)
     if skip_phonopy or not poscar.is_file():
         rep["phonopy"] = {"skipped": True}
@@ -501,11 +587,12 @@ def run_cycle(
         report["god_mode"] = resume_god_mode(steps=god_steps, force=god_force)
 
     sc_done = set(state.get("sc_done") or [])
-    run_ids = [r for r in discover_sc_run_ids(limit=sc_limit) if r not in sc_done]
+    pending = discover_sc_run_ids(limit=max(sc_limit * 8, 32))
+    run_ids = [r for r in pending if r not in sc_done and _resolve_blueprint_path(r)][:sc_limit]
 
     if run_ids:
         import concurrent.futures
-        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=min(2, len(run_ids))) as executor:
             futures = {}
             for run_id in run_ids:
                 _log(f"SC forge (parallel): {run_id}")

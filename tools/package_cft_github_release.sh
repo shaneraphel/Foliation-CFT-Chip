@@ -28,6 +28,8 @@ TOOL_WHITELIST=(
   chip_physics_sim_gate.py
   chip_data_harvest_pipeline.py
   foliation_artifact_paths.py
+  foliation_chip_paths.py
+  chip_cft_materialize.py
   foliation_icloud_mount.py
 )
 for name in "${TOOL_WHITELIST[@]}"; do
@@ -43,6 +45,7 @@ BIN_WHITELIST=(
   chip-dual-batch-sweeper
   chip-icloud-env.sh
   chip-icloud-mount
+  chip-cft-materialize
 )
 for name in "${BIN_WHITELIST[@]}"; do
   [[ -f "$ROOT/bin/$name" ]] && cp "$ROOT/bin/$name" "$DEST/bin/"

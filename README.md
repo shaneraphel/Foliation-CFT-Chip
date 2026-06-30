@@ -1,4 +1,4 @@
-# Foliation CFT Chip — Data & Results Release **v0.3.0**
+# Foliation CFT Chip — Data & Results Release **v0.3.1**
 
 **SC / HEA 计算产物** + **多源数据收割管线** + **CFT / FPU / QE 加速芯片网表**（sky130 流片结果）。
 
@@ -8,6 +8,16 @@
 **作者 / Author:** Shan Yu
 
 ---
+
+## v0.3.1 更新（2026-06-30）
+
+| 项目 | 内容 |
+|------|------|
+| **CFT 芯片回接** | `chip-cft-materialize` 将 GitHub CFT 三颗 netlist 回填 pass-v1 规范路径 |
+| **漂移防护** | netlist materialize 改 SHA256 比对，支持 `FOLIATION_NETLIST_SOURCE=cft|pass-v1|auto` |
+| **硬门禁** | Forge/Fleet/pass-v1 主入口恢复 physics sim gate，不再静默跳过芯片 A/B/HEA |
+| **SC 进展** | `killer_20260616_050648` decode → POSCAR → GCU fastpath 通过，`sc_done=8` |
+| **当前 checkpoint** | iCloud Forge checkpoint 推进至 cycle 105 |
 
 ## v0.3.0 更新（2026-06-28）
 

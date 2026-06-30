@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$ROOT/bin/chip-icloud-env.sh"
+export FOLIATION_CFT_ROOT="${FOLIATION_CFT_ROOT:-$HOME/Foliation-CFT-Chip}"
+exec python3 "$ROOT/tools/chip_cft_materialize.py" --tapeout "$@"
