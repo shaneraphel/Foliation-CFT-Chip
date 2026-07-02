@@ -1,0 +1,23 @@
+{
+  "U_eV": 2.5,
+  "Mu_eV": -1.2,
+  "V_k_eV": [
+    0.6152,
+    0.0,
+    0.0001,
+    0.0001,
+    0.0001,
+    0.0001
+  ],
+  "E_k_eV": [
+    -1.28,
+    -1.28,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "num_wann": 3,
+  "source": "wannier90_hr.dat+ED+forge-daemon-universal-6bath",
+  "netlist": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/gcu_test/extensions_universal_v3.aig"
+}

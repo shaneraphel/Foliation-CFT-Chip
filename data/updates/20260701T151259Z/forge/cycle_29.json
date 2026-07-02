@@ -1,0 +1,262 @@
+{
+  "cycle": 29,
+  "sc": [
+    {
+      "run_id": "killer_20260616_050648",
+      "track": "SC",
+      "decode": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"verdict\": \"PASS_SYNTHESIS_RECIPE\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260616_050648.json\",\n  \"accepted_formula\": \"TaO2\",\n  \"J_recheck\": 0.07017709945168038\n}\n",
+        "stderr": "decode=PASS_SYNTHESIS_RECIPE formula=TaO2 J_recheck=0.070 tries=1\n"
+      },
+      "decode_verdict": "PASS_SYNTHESIS_RECIPE",
+      "poscar": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"run_id\": \"killer_20260616_050648\",\n  \"formula\": \"TaO2\",\n  \"nat\": 3,\n  \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR\",\n  \"out_dir\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648\"\n}\n",
+        "stderr": "/Users/shanyu/Desktop/foliation-pass-v1/scripts/oracle/build_decoded_structure.py:107: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.\n  struct = CifParser(str(parent_cif)).parse_structures(primitive=False)[0]\nstructure=TaO2 nat=3 poscar=POSCAR\n"
+      },
+      "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+      "gcu_prescreen": {
+        "ok": true,
+        "exit": 0,
+        "stdout": " [\n          -1.0,\n          -0.010056703052429158\n        ],\n        [\n          -0.010056703052429158,\n          -0.012009757928316758\n        ]\n      ],\n      \"scale_ev\": 106.58,\n      \"nn_hop_ev\": 1.0718434113279007,\n      \"source\": \"CORE_5_BORN_UNROLL\"\n    },\n    \"warning\": \"Core 5 physical tensors found. Ignoring wannier90_hr.dat completely.\"\n  },\n  \"gcu_core_sim\": {\n    \"exterior_routing_jw\": {\n      \"hop_out\": -1000,\n      \"coulomb_out\": -500,\n      \"jw_sign\": 1,\n      \"ok\": true\n    },\n    \"exterior_routing_rom\": {\n      \"ok\": true\n    },\n    \"spinor_projection\": {\n      \"out_q16\": [\n        32768.0,\n        -16384.0,\n        0\n      ],\n      \"out_norm\": [\n        1.0,\n        -0.5,\n        0.0\n      ],\n      \"ok\": true\n    },\n    \"einstein_contraction\": {\n      \"C\": [\n        [\n          19,\n          22\n        ],\n        [\n          43,\n          50\n        ]\n      ],\n      \"ok\": true\n    },\n    \"spectral_extractor\": {\n      \"delta_alpha\": 3,\n      \"valid\": true,\n      \"ok\": true\n    },\n    \"superoperator_chain\": {\n      \"lambda_max\": 0.925066,\n      \"delta_alpha\": 0.112372,\n      \"ok\": true\n    }\n  },\n  \"wannier_hr\": \"\",\n  \"hubbard\": \"\",\n  \"h_block\": {\n    \"num_wann\": 3,\n    \"h_raw\": [\n      [\n        -106.58,\n        -1.0718434113278996\n      ],\n      [\n        -1.0718434113278996,\n        -1.28\n      ]\n    ],\n    \"h_norm\": [\n      [\n        -1.0,\n        -0.010056703052429158\n      ],\n      [\n        -0.010056703052429158,\n        -0.012009757928316758\n      ]\n    ],\n    \"scale_ev\": 106.58,\n    \"nn_hop_ev\": 1.0718434113279007,\n    \"source\": \"CORE_5_BORN_UNROLL\"\n  },\n  \"spectral_proxy\": {\n    \"lambda_max\": 1.00020472,\n    \"delta_alpha_log2\": -0.00029532,\n    \"soft_mode_risk\": true,\n    \"strict_block\": false\n  },\n  \"gcu_phonopy_fastpath\": {\n    \"schema\": \"foliation.core5_phonopy_fastpath.v1\",\n    \"source\": \"CORE_5_BORN_UNROLL\",\n    \"run_id\": \"killer_20260616_050648\",\n    \"poscar\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR\",\n    \"core5_tensor_artifact\": \"/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json\",\n    \"force_constants_proxy\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/FORCE_CONSTANTS_CORE5_PROXY\",\n    \"num_atoms\": 3,\n    \"used_hops\": 6,\n    \"fc2_norm\": 0.08357232,\n    \"min_proxy_cm1\": 0.0,\n    \"spotcheck_displacements\": 0,\n    \"verdict\": \"PASS_CORE5_PHONOPY_FASTPATH\",\n    \"note\": \"Core 5 Born-unroll force-constant proxy; external Phonopy remains final audit only.\",\n    \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/core5_phonopy_fastpath.json\"\n  },\n  \"elapsed_s\": 0.04,\n  \"spectral_warning\": \"SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_prescreen_killer_20260616_050648.json\"\n}\nverdict=PASS_GCU_PRESCREEN phonopy_docker=FINAL_AUDIT_ONLY\n",
+        "stderr": ""
+      },
+      "gcu_prescreen_body": {
+        "schema": "foliation.gcu_phonopy_prescreen.v1",
+        "ts": "2026-06-24T02:12:35.780832+00:00",
+        "run_id": "killer_20260616_050648",
+        "passed": true,
+        "verdict": "PASS_GCU_PRESCREEN",
+        "pipeline": [
+          "chip_a/chip_b physics sim",
+          "Core5 Born-unroll→ROM core1 burn (Wannier fallback only)",
+          "GCU 5-core reference sim",
+          "superoperator spectral proxy"
+        ],
+        "phonopy_docker": "FINAL_AUDIT_ONLY",
+        "chip_sim": {
+          "chip_a_ok": true,
+          "chip_b_ok": true
+        },
+        "rom_burn": {
+          "source": "CORE_5_BORN_UNROLL",
+          "mapped_hops": 9,
+          "long_range_hops": 6,
+          "mem": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_weights.mem",
+          "index": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_index.mem",
+          "meta": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/exterior_routing_weights.meta.json",
+          "verilog": "/Users/shanyu/Foliation-Engine/out/chip/gcu_hamiltonian/verilog/gcu_exterior_routing_killer_20260616_050648.v",
+          "tensor_artifact": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json",
+          "num_wann": 3,
+          "r_max": 0,
+          "index_depth": 9,
+          "h_block": {
+            "num_wann": 3,
+            "h_raw": [
+              [
+                -106.58,
+                -1.0718434113278996
+              ],
+              [
+                -1.0718434113278996,
+                -1.28
+              ]
+            ],
+            "h_norm": [
+              [
+                -1.0,
+                -0.010056703052429158
+              ],
+              [
+                -0.010056703052429158,
+                -0.012009757928316758
+              ]
+            ],
+            "scale_ev": 106.58,
+            "nn_hop_ev": 1.0718434113279007,
+            "source": "CORE_5_BORN_UNROLL"
+          },
+          "warning": "Core 5 physical tensors found. Ignoring wannier90_hr.dat completely."
+        },
+        "gcu_core_sim": {
+          "exterior_routing_jw": {
+            "hop_out": -1000,
+            "coulomb_out": -500,
+            "jw_sign": 1,
+            "ok": true
+          },
+          "exterior_routing_rom": {
+            "ok": true
+          },
+          "spinor_projection": {
+            "out_q16": [
+              32768.0,
+              -16384.0,
+              0
+            ],
+            "out_norm": [
+              1.0,
+              -0.5,
+              0.0
+            ],
+            "ok": true
+          },
+          "einstein_contraction": {
+            "C": [
+              [
+                19,
+                22
+              ],
+              [
+                43,
+                50
+              ]
+            ],
+            "ok": true
+          },
+          "spectral_extractor": {
+            "delta_alpha": 3,
+            "valid": true,
+            "ok": true
+          },
+          "superoperator_chain": {
+            "lambda_max": 0.925066,
+            "delta_alpha": 0.112372,
+            "ok": true
+          }
+        },
+        "wannier_hr": "",
+        "hubbard": "",
+        "h_block": {
+          "num_wann": 3,
+          "h_raw": [
+            [
+              -106.58,
+              -1.0718434113278996
+            ],
+            [
+              -1.0718434113278996,
+              -1.28
+            ]
+          ],
+          "h_norm": [
+            [
+              -1.0,
+              -0.010056703052429158
+            ],
+            [
+              -0.010056703052429158,
+              -0.012009757928316758
+            ]
+          ],
+          "scale_ev": 106.58,
+          "nn_hop_ev": 1.0718434113279007,
+          "source": "CORE_5_BORN_UNROLL"
+        },
+        "spectral_proxy": {
+          "lambda_max": 1.00020472,
+          "delta_alpha_log2": -0.00029532,
+          "soft_mode_risk": true,
+          "strict_block": false
+        },
+        "gcu_phonopy_fastpath": {
+          "schema": "foliation.core5_phonopy_fastpath.v1",
+          "source": "CORE_5_BORN_UNROLL",
+          "run_id": "killer_20260616_050648",
+          "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+          "core5_tensor_artifact": "/Users/shanyu/Foliation-Engine/artifacts/gcu_rom/killer_20260616_050648/core5_born_tensors.json",
+          "force_constants_proxy": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/FORCE_CONSTANTS_CORE5_PROXY",
+          "num_atoms": 3,
+          "used_hops": 6,
+          "fc2_norm": 0.08357232,
+          "min_proxy_cm1": 0.0,
+          "spotcheck_displacements": 0,
+          "verdict": "PASS_CORE5_PHONOPY_FASTPATH",
+          "note": "Core 5 Born-unroll force-constant proxy; external Phonopy remains final audit only.",
+          "out": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/core5_phonopy_fastpath.json"
+        },
+        "elapsed_s": 0.04,
+        "spectral_warning": "SOFT_MODE_RISK_PHONOPY_FINAL_REQUIRED"
+      },
+      "phonopy": {
+        "ok": false,
+        "exit": 1,
+        "stdout": "gcu_spectral_extractor\",\n      \"gcu_artifact\": \"min_proxy_cm1, delta_alpha, lambda_max\",\n      \"status\": \"implemented_proxy_v1\",\n      \"effect\": \"GCU finds soft-mode risk before external band.yaml audit.\"\n    },\n    {\n      \"validator\": \"QE pw.x\",\n      \"kernel\": \"Hamiltonian apply / H psi reduced subspace\",\n      \"external_default\": \"plane-wave H psi inside pw.x\",\n      \"gcu_hijacker\": \"HAMILTONIAN_GCU_FIVE_CORE_PIPELINE\",\n      \"gcu_artifact\": \"qe_hamiltonian_sidecar.json + Wannier ROM exterior_routing_weights.mem\",\n      \"status\": \"sidecar_injected_v1\",\n      \"effect\": \"Every pw.x force call is interposed by a GCU sidecar shim carrying ROM/AIG Hamiltonian evidence and precondition hints; QE validates full plane-wave force.\"\n    },\n    {\n      \"validator\": \"QE pw.x\",\n      \"kernel\": \"large zgemm_ plane-wave contraction\",\n      \"symbol\": \"zgemm_\",\n      \"condition\": \"k >= 10000\",\n      \"external_default\": \"vendor BLAS complex GEMM over Npw tail\",\n      \"gcu_hijacker\": \"GCU_TENSOR_CONTRACTION_CORE_8BIT tiled complex MAC\",\n      \"gcu_artifact\": \"LD_PRELOAD gcu_qe_interposer.c, qe_hamiltonian_sidecar.json\",\n      \"status\": \"large_zgemm_tiled_writeback_v1\",\n      \"writeback\": 1,\n      \"effect\": \"The interposer tiles the long k=Npw contraction, reduces each tile through the GCU contraction proxy, and writes C tiles back into the live QE buffer.\"\n    },\n    {\n      \"validator\": \"QE pw.x\",\n      \"kernel\": \"SCF preconditioner / soft-mode direction selection\",\n      \"external_default\": \"QE internal iterative preconditioner\",\n      \"gcu_hijacker\": \"GCU_ANALYTIC_CALCULUS_CORE_16BIT + GCU_TENSOR_CONTRACTION_CORE_8BIT\",\n      \"gcu_artifact\": \"qe_hamiltonian_sidecar.json, fc2_norm, FORCE_CONSTANTS_GCU_PROXY\",\n      \"status\": \"sidecar_injected_v1\",\n      \"effect\": \"The validator exports GCU spectral hints into the pw.x wrapper before SCF starts; this is the current host-native bridge without recompiling QE.\"\n    },\n    {\n      \"validator\": \"SQS / HEA postprocess\",\n      \"kernel\": \"composition correlations and Warren-Cowley screening\",\n      \"external_default\": \"SQS/postprocess scripts\",\n      \"gcu_hijacker\": \"GCU_TENSOR_CONTRACTION_CORE_8BIT\",\n      \"gcu_artifact\": \"C^T Omega C, delta_mismatch, entropy, top_subsets\",\n      \"status\": \"implemented_matrix_solver\",\n      \"effect\": \"HEA candidates originate in GCU matrix kernel; SQS only materializes/audits structure.\"\n    }\n  ],\n  \"gcu_fastpath_verdict\": \"PASS_CORE5_PHONOPY_FASTPATH\",\n  \"min_proxy_cm1\": 0.0,\n  \"fc2_norm\": 0.08357232,\n  \"spotcheck_displacements\": 0,\n  \"force_constants_proxy\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_phonopy_fastpath/killer_20260616_050648/FORCE_CONSTANTS_CORE5_PROXY\",\n  \"acceleration_contract\": \"External QE/Phonopy must consume GCU evidence before validation; candidate origin remains GCU/FPU/NLP.\",\n  \"external_exit\": 1,\n  \"audit\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/gcu_parasitic_validator/killer_20260616_050648/parasite_validator.json\"\n}\n",
+        "stderr": ""
+      },
+      "stability": {
+        "schema": "foliation.phonopy_stability_verdict.v1",
+        "run_id": "killer_20260616_050648",
+        "formula_proposed": "TaO2",
+        "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+        "phonopy_run_dir": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260616_050648",
+        "decode_ref": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260616_050648.json",
+        "threshold_cm-1": -20.0,
+        "band_analysis": {
+          "ok": true,
+          "min_frequency_THz": -3.5780966176,
+          "max_frequency_THz": 8.1633850035,
+          "min_frequency_cm-1": -119.35245250033802,
+          "max_frequency_cm-1": 272.3012050819713,
+          "imaginary_mode_points": 610,
+          "n_frequencies": 1377,
+          "band_yaml": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260616_050648/phonopy/band.yaml"
+        },
+        "docker": {
+          "ok": true,
+          "returncode": 0,
+          "stdout_tail": "py_1/band.conf\" was read as phonopy configuration file.\nCrystal structure was read from \"phonopy_disp.yaml\".\nUnit of length: angstrom\nBand structure and mesh sampling mode\nSettings:\n  Sampling mesh: [20 20  1]\n  Supercell: [1 1 1]\n  Primitive matrix:\n    [ 1. -0.  0.]\n    [0. 1. 0.]\n    [0. 0. 1.]\nSpacegroup: P-6m2 (187)\nNumber of symmetry operations in supercell: 12\nUse -v option to watch primitive cell, unit cell, and supercell structures.\n\nDisplacement-force dataset was read from \"FORCE_SETS\".\n-------------------------------- Symfc start -------------------------------\nSymfc version 1.7.2 (https://github.com/symfc/symfc)\nCitation: A. Seko and A. Togo, Phys. Rev. B, 110, 214302 (2024)\nComputing [2] order force constants.\nWARNING:\n  Half-grid shift [1, 1, 0] is not preserved by the primitive-cell point group\n  for mesh [20, 20, 1]. Point-group symmetry reduction is disabled; only time-\n  reversal symmetry is applied. Use a gamma-centered mesh (no shift) to keep\n  full symmetry.\n\nIncrease log-level to watch detailed symfc log.\n--------------------------------- Symfc end --------------------------------\nMax drift of force constants: 0.00000000 (yy) 0.00000000 (yy) \nMax drift after symmetrization by symfc projector: 0.00000000 (zz) 0.00000000 (zz) \n\nReciprocal space paths in reduced coordinates:\n[ 0.000  0.000  0.000] --> [ 0.500  0.000  0.000]\n[ 0.500  0.000  0.000] --> [ 0.333  0.333  0.000]\n[ 0.333  0.333  0.000] --> [ 0.000  0.000  0.000]\nMesh numbers: [20 20  1]\nNumber of irreducible q-points on sampling mesh: 200/400\nCalculating phonons on sampling mesh...\nCalculating DOS...\n\nSummary of calculation was written in \"phonopy.yaml\".\n-------------------------[time 2026-06-24 02:15:51]-------------------------\n                 _\n   ___ _ __   __| |\n  / _ \\ '_ \\ / _` |\n |  __/ | | | (_| |\n  \\___|_| |_|\\__,_|\n\n>> phonopy band output OK -> /foliation_project/artifacts/oracle/phonopy_runs/oracle_phonopy_killer_20260616_050648/phonopy/band.yaml\n>> phonopy total_dos.dat OK\n",
+          "stderr_tail": "",
+          "gcu_sidecar": {
+            "mode": "sidecar_injected_v1",
+            "sidecar": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260616_050648/qe_hamiltonian_sidecar.json",
+            "wrapper_dir": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260616_050648",
+            "interposer_src": "/foliation_project/artifacts/oracle/gcu_parasitic_validator/killer_20260616_050648/gcu_qe_interposer.c",
+            "interposer_so": "/tmp/libfoliation_gcu_qe_killer_20260616_050648.so",
+            "force_interpose": "1",
+            "force_large_zgemm": "1",
+            "large_zgemm_k": "10000"
+          }
+        },
+        "passed": false,
+        "verdict": "FAIL_IMAGINARY_PHONON",
+        "min_frequency_cm-1": -119.35245250033802,
+        "imaginary_mode_points": 610,
+        "reason": "min -119.35 cm-1 <= -20.0 cm-1"
+      },
+      "ok": false,
+      "stage": "phonopy"
+    }
+  ],
+  "hea": {
+    "track": "HEA",
+    "hea_run": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716",
+    "anneal": {
+      "ok": true,
+      "exit": 0,
+      "stdout": "ℒ_best=-8.942040 kJ/mol-scale\nΔH_mix=-5.5798  ΔS_mix=0.011277  δ=0.02154\nC* = [Ni:0.3500, Co:0.0500, Cr:0.2000, Fe:0.0500, Mn:0.3500]\naccepts=41382/49858  2138854 steps/s  elapsed=23ms\nreport → /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json\nmass_production_ready=true\n>> cargo run --release --quiet --manifest-path /Users/shanyu/Foliation-Engine/crates/foliation-engine/Cargo.toml --bin hea-thermo-anneal -- --steps=50000 --gamma=0.03 --temperature-k=298.15 --out=/Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json\n{\n  \"c_star\": {\n    \"Ni\": 0.35000000082977173,\n    \"Co\": 0.05001753037844122,\n    \"Cr\": 0.19996493758357414,\n    \"Fe\": 0.05001753037844122,\n    \"Mn\": 0.35000000082977173\n  },\n  \"l_best\": -8.942039936796547,\n  \"delta_mismatch\": 0.021542952178275822,\n  \"steps_per_sec\": 2138854.4295675238,\n  \"mass_production_ready\": true\n}\n",
+      "stderr": "_assign` is never used\n   --> crates/foliation-engine/src/experimental_v2/pow_algebra_circuit.rs:112:8\n    |\n 51 | impl WideInt {\n    | ------------ method in this implementation\n...\n112 |     fn shr_assign(&mut self, n: usize) {\n    |        ^^^^^^^^^^\n\nwarning: function `apply_redirects` is never used\n   --> crates/foliation-engine/src/experimental_v2/foliation_unification.rs:255:4\n    |\n255 | fn apply_redirects(dag: TopologicalDag, redirect: &HashMap<NodeId, NodeId>) -> TopologicalDag {\n    |    ^^^^^^^^^^^^^^^\n\nwarning: function `workspace_artifacts` is never used\n   --> crates/foliation-engine/src/experimental_v2/sha256_hard_sim.rs:122:4\n    |\n122 | fn workspace_artifacts() -> PathBuf {\n    |    ^^^^^^^^^^^^^^^^^^^\n\n=== HEA Thermodynamic Annealing · Cantor 5-element · steps=50000 ===\n"
+    },
+    "closure": {
+      "ok": true,
+      "exit": 0,
+      "stdout": "{\n  \"c_star_ok\": true,\n  \"sro_passed\": true,\n  \"sluggish_status\": \"PENDING\",\n  \"cocktail_status\": \"PENDING\",\n  \"hea_firewall_expected\": \"BLOCK_FPU\",\n  \"journal_grade_hea\": false\n}\n\n[*] → /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/hea_emergence/c_star_sro_validation.json\n",
+      "stderr": ""
+    },
+    "c_star_summary": {
+      "c_star_ok": true,
+      "sro_passed": true,
+      "sluggish_status": "PENDING",
+      "cocktail_status": "PENDING",
+      "hea_firewall_expected": "BLOCK_FPU",
+      "journal_grade_hea": false
+    },
+    "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/sqs/POSCAR",
+    "ok": true,
+    "stage": "hea_ready"
+  },
+  "god_mode": null
+}

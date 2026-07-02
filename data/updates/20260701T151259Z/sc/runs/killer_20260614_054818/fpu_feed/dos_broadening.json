@@ -1,0 +1,6 @@
+{
+  "dos_broadening_eV": 0.27211386245988,
+  "source": "qe_scf.in_degauss",
+  "degauss_Ry": 0.02,
+  "smearing": "mv"
+}

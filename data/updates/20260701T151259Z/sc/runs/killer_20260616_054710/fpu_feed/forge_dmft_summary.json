@@ -1,0 +1,50 @@
+{
+  "sigma_iwn": -0.7670146144578572,
+  "pole_count": 6,
+  "poles": [
+    {
+      "parity_state": "0x82670e22152fda29",
+      "spectral_weight": 0.4090533333333333
+    },
+    {
+      "parity_state": "0xa855ad086788e2e2",
+      "spectral_weight": 1.5290083333333333
+    },
+    {
+      "parity_state": "0x72c804823728b2e3",
+      "spectral_weight": 2.4560041666666668
+    },
+    {
+      "parity_state": "0x70c204223d0f874e",
+      "spectral_weight": 3.365314166666667
+    },
+    {
+      "parity_state": "0x729801822f0f7a2e",
+      "spectral_weight": 4.463933333333333
+    },
+    {
+      "parity_state": "0xd8f52d08678835eb",
+      "spectral_weight": 5.431046666666667
+    }
+  ],
+  "forge_run_dir": "/Users/shanyu/Desktop/foliation-pass-v1/data/StarForge_Archive/forge_1_0",
+  "U_eV": 2.5,
+  "Mu_eV": -1.2,
+  "V_k_eV": [
+    0.1732,
+    0.1582,
+    0.1232,
+    0.116,
+    0.1022,
+    0.098
+  ],
+  "E_k_eV": [
+    2.4689,
+    5.168,
+    4.5685,
+    2.8987,
+    4.9865,
+    4.0916
+  ],
+  "aig": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/gcu_test/extensions_universal_v3.aig"
+}

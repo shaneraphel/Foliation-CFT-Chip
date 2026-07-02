@@ -1,0 +1,9 @@
+{
+  "source": "wannier90_hr+forge-green-2D-london",
+  "lambda_L_nm": 31128382.500920407,
+  "superfluid_density_m2": 2.9143736752249004e+16,
+  "effective_mass_me": 1.0,
+  "field_expulsion_fraction": 0.0,
+  "pole_weight_sum": 19.3789225,
+  "sigma_iwn": -0.88337709556632
+}

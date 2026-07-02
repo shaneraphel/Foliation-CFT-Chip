@@ -1,0 +1,27 @@
+{
+  "cycle": 42,
+  "sc": [
+    {
+      "run_id": "killer_20260616_050648",
+      "track": "SC",
+      "decode": {
+        "ok": true,
+        "exit": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"verdict\": \"PASS_SYNTHESIS_RECIPE\",\n  \"out\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/inverse_decode_killer_20260616_050648.json\",\n  \"accepted_formula\": \"MoS2\",\n  \"J_recheck\": 0.07017709945168038\n}\n",
+        "stderr": "decode=PASS_SYNTHESIS_RECIPE formula=MoS2 J_recheck=0.070 tries=1\n"
+      },
+      "decode_verdict": "PASS_SYNTHESIS_RECIPE",
+      "poscar": {
+        "ok": false,
+        "exit": 1,
+        "stdout": "{\"ok\": false, \"error\": \"No module named 'pymatgen'\"}\n",
+        "stderr": ""
+      },
+      "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260616_050648/POSCAR",
+      "ok": false,
+      "stage": "poscar"
+    }
+  ],
+  "hea": null,
+  "god_mode": null
+}

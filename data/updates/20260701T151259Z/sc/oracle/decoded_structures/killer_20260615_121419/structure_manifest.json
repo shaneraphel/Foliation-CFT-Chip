@@ -1,0 +1,36 @@
+{
+  "parent_cif": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260615_121419/candidate.cif",
+  "supercell_matrix": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "supercell_name": "2x2",
+  "host": "Mo",
+  "ligand": "S",
+  "dopant": null,
+  "dopant_sites": 0,
+  "host_sites": 4,
+  "dopant_indices": [],
+  "substitution_rule": "lexicographic_frac_coords_first_TM",
+  "nat": 12,
+  "formula_pretty": "MoS2",
+  "decode_run_id": "killer_20260615_121419",
+  "target_formula": "MoS2",
+  "deterministic": true,
+  "randomness": "none",
+  "poscar": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_121419/POSCAR",
+  "cif": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/decoded_structures/killer_20260615_121419/decoded.cif"
+}

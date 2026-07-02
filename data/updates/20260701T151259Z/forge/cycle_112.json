@@ -1,0 +1,50 @@
+{
+  "cycle": 112,
+  "sc": [],
+  "hea": {
+    "track": "HEA",
+    "hea_run": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716",
+    "anneal": {
+      "ok": true,
+      "exit": 0,
+      "stdout": "ℒ_best=-8.938167 kJ/mol-scale\nΔH_mix=-5.5697  ΔS_mix=0.011298  δ=0.02155\nC* = [Ni:0.3500, Co:0.0509, Cr:0.1981, Fe:0.0509, Mn:0.3500]\naccepts=4087/4980  1305100 steps/s  elapsed=3ms\nreport → /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json\nmass_production_ready=true\n>> cargo run --release --quiet --manifest-path /Users/shanyu/Foliation-Engine/crates/foliation-engine/Cargo.toml --bin hea-thermo-anneal -- --steps=5000 --gamma=0.03 --temperature-k=298.15 --out=/Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json\n{\n  \"c_star\": {\n    \"Ni\": 0.3500000008714322,\n    \"Co\": 0.05093109618587349,\n    \"Cr\": 0.19813780588538865,\n    \"Fe\": 0.05093109618587349,\n    \"Mn\": 0.3500000008714322\n  },\n  \"l_best\": -8.938167037481412,\n  \"delta_mismatch\": 0.021546780564745797,\n  \"steps_per_sec\": 1305099.67698783,\n  \"mass_production_ready\": true\n}\n",
+      "stderr": "r_assign` is never used\n   --> crates/foliation-engine/src/experimental_v2/pow_algebra_circuit.rs:112:8\n    |\n 51 | impl WideInt {\n    | ------------ method in this implementation\n...\n112 |     fn shr_assign(&mut self, n: usize) {\n    |        ^^^^^^^^^^\n\nwarning: function `apply_redirects` is never used\n   --> crates/foliation-engine/src/experimental_v2/foliation_unification.rs:255:4\n    |\n255 | fn apply_redirects(dag: TopologicalDag, redirect: &HashMap<NodeId, NodeId>) -> TopologicalDag {\n    |    ^^^^^^^^^^^^^^^\n\nwarning: function `workspace_artifacts` is never used\n   --> crates/foliation-engine/src/experimental_v2/sha256_hard_sim.rs:122:4\n    |\n122 | fn workspace_artifacts() -> PathBuf {\n    |    ^^^^^^^^^^^^^^^^^^^\n\n=== HEA Thermodynamic Annealing · Cantor 5-element · steps=5000 ===\n"
+    },
+    "closure": {
+      "ok": true,
+      "exit": 0,
+      "stdout": "{\n  \"c_star_ok\": false,\n  \"sro_passed\": true,\n  \"sluggish_status\": \"PASS\",\n  \"cocktail_status\": \"PASS\",\n  \"hea_firewall_expected\": \"BLOCK_FPU\",\n  \"journal_grade_hea\": true\n}\n\n[*] → /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/hea_emergence/c_star_sro_validation.json\n",
+      "stderr": ""
+    },
+    "c_star_summary": {
+      "c_star_ok": false,
+      "sro_passed": true,
+      "sluggish_status": "PASS",
+      "cocktail_status": "PASS",
+      "hea_firewall_expected": "BLOCK_FPU",
+      "journal_grade_hea": true
+    },
+    "journal_grade_hea": true,
+    "closure_exit_nonfatal": false,
+    "closure_note": "C* composition mismatch remains, but SRO/sluggish/cocktail journal-grade HEA gates pass; BLOCK_FPU is expected.",
+    "hea_bootstrap": {
+      "ok": true,
+      "exit": 0,
+      "stdout": "{\n  \"run\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716\",\n  \"dos\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/fpu_feed/dos_broadening.json\",\n  \"msd\": {\n    \"ok\": true,\n    \"path\": \"/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/lammps/msd_trajectory.dat\"\n  }\n}\n",
+      "stderr": ""
+    },
+    "hea_emergence_refresh": {
+      "ok": false,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py\", line 219, in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py\", line 193, in main\n    sro = compute_sro(run, cfg)\n  File \"/Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py\", line 75, in compute_sro\n    atoms = load_structure(run_dir)\n  File \"/Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py\", line 31, in load_structure\n    from ase.io import read\nModuleNotFoundError: No module named 'ase'\n"
+    },
+    "poscar_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716/sqs/POSCAR",
+    "phonopy": {
+      "skipped": true
+    },
+    "ok": true,
+    "stage": "hea_journal_closure"
+  },
+  "god_mode": null
+}

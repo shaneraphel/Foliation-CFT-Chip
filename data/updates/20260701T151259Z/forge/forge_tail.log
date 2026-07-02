@@ -1,0 +1,300 @@
+[2026-06-30T21:13:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-30T21:13:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-30T21:13:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-30T21:13:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-30T21:13:38Z] Cycle 233 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_233.json
+[2026-06-30T21:13:38Z] cycle exit=0; sleep 180s
+[2026-06-30T23:15:34Z] HEA forge cycle
+[2026-06-30T23:15:34Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-30T23:15:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-06-30T23:15:36Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-30T23:15:36Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-06-30T23:15:37Z] Cycle 234 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_234.json
+[2026-06-30T23:15:37Z] cycle exit=0; sleep 180s
+[2026-07-01T01:30:25Z] HEA forge cycle
+[2026-07-01T01:30:25Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T01:30:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T01:30:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T01:30:28Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T01:30:28Z] Cycle 235 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_235.json
+[2026-07-01T01:30:28Z] cycle exit=0; sleep 180s
+[2026-07-01T04:20:24Z] HEA forge cycle
+[2026-07-01T04:20:24Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T04:20:26Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T04:20:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T04:20:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T04:20:27Z] Cycle 236 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_236.json
+[2026-07-01T04:20:27Z] cycle exit=0; sleep 180s
+[2026-07-01T07:11:16Z] HEA forge cycle
+[2026-07-01T07:11:16Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T07:11:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T07:11:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T07:11:19Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T07:22:36Z] Cycle 237 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_237.json
+[2026-07-01T07:22:36Z] cycle exit=0; sleep 180s
+[2026-07-01T10:14:53Z] HEA forge cycle
+[2026-07-01T10:14:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T10:14:55Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T10:14:55Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T10:14:56Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T10:14:56Z] Cycle 238 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_238.json
+[2026-07-01T10:14:56Z] cycle exit=0; sleep 180s
+[2026-07-01T13:00:21Z] HEA forge cycle
+[2026-07-01T13:00:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:16:20Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:16:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:16:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:16:21Z] Cycle 239 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_239.json
+[2026-07-01T13:16:21Z] cycle exit=0; sleep 180s
+[2026-07-01T13:27:33Z] HEA forge cycle
+[2026-07-01T13:27:33Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:27:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:27:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:27:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:27:35Z] Cycle 240 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_240.json
+[2026-07-01T13:27:35Z] cycle exit=0; sleep 180s
+[2026-07-01T13:30:35Z] HEA forge cycle
+[2026-07-01T13:30:35Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:30:40Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:30:40Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:30:41Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:30:41Z] Cycle 241 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_241.json
+[2026-07-01T13:30:41Z] cycle exit=0; sleep 180s
+[2026-07-01T13:33:41Z] HEA forge cycle
+[2026-07-01T13:33:41Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:33:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:33:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:33:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:33:46Z] Cycle 242 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_242.json
+[2026-07-01T13:33:46Z] cycle exit=0; sleep 180s
+[2026-07-01T13:36:46Z] HEA forge cycle
+[2026-07-01T13:36:46Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:37:00Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:37:10Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:37:11Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:37:12Z] Cycle 243 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_243.json
+[2026-07-01T13:37:12Z] cycle exit=0; sleep 180s
+[2026-07-01T13:40:12Z] HEA forge cycle
+[2026-07-01T13:40:12Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:40:19Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:40:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:40:30Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:40:32Z] Cycle 244 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_244.json
+[2026-07-01T13:40:32Z] cycle exit=0; sleep 180s
+[2026-07-01T13:43:32Z] HEA forge cycle
+[2026-07-01T13:43:32Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:43:36Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:43:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:43:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:43:37Z] Cycle 245 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_245.json
+[2026-07-01T13:43:37Z] cycle exit=0; sleep 180s
+[2026-07-01T13:46:38Z] HEA forge cycle
+[2026-07-01T13:46:38Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:46:40Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:46:44Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:46:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:46:45Z] Cycle 246 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_246.json
+[2026-07-01T13:46:45Z] cycle exit=0; sleep 180s
+[2026-07-01T13:49:45Z] HEA forge cycle
+[2026-07-01T13:49:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:49:46Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:49:47Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:49:47Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:49:48Z] Cycle 247 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_247.json
+[2026-07-01T13:49:48Z] cycle exit=0; sleep 180s
+[2026-07-01T13:52:48Z] HEA forge cycle
+[2026-07-01T13:52:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:52:51Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:52:52Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:52:52Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:52:52Z] Cycle 248 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_248.json
+[2026-07-01T13:52:52Z] cycle exit=0; sleep 180s
+[2026-07-01T13:55:52Z] HEA forge cycle
+[2026-07-01T13:55:52Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:56:00Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:56:01Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:56:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:56:02Z] Cycle 249 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_249.json
+[2026-07-01T13:56:02Z] cycle exit=0; sleep 180s
+[2026-07-01T13:59:02Z] HEA forge cycle
+[2026-07-01T13:59:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:59:04Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T13:59:06Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:59:06Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T13:59:06Z] Cycle 250 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_250.json
+[2026-07-01T13:59:06Z] cycle exit=0; sleep 180s
+[2026-07-01T14:02:07Z] HEA forge cycle
+[2026-07-01T14:02:07Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:02:09Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:02:10Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:02:10Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:02:11Z] Cycle 251 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_251.json
+[2026-07-01T14:02:11Z] cycle exit=0; sleep 180s
+[2026-07-01T14:05:11Z] HEA forge cycle
+[2026-07-01T14:05:11Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:05:15Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:05:16Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:05:16Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:05:17Z] Cycle 252 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_252.json
+[2026-07-01T14:05:17Z] cycle exit=0; sleep 180s
+[2026-07-01T14:08:17Z] HEA forge cycle
+[2026-07-01T14:08:17Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:08:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:08:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:08:22Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:08:22Z] Cycle 253 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_253.json
+[2026-07-01T14:08:22Z] cycle exit=0; sleep 180s
+[2026-07-01T14:11:22Z] HEA forge cycle
+[2026-07-01T14:11:22Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:11:25Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:11:25Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:11:25Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:11:26Z] Cycle 254 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_254.json
+[2026-07-01T14:11:26Z] cycle exit=0; sleep 180s
+[2026-07-01T14:14:26Z] HEA forge cycle
+[2026-07-01T14:14:26Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:14:28Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:14:29Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:14:29Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:14:29Z] Cycle 255 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_255.json
+[2026-07-01T14:14:29Z] cycle exit=0; sleep 180s
+[2026-07-01T14:17:29Z] HEA forge cycle
+[2026-07-01T14:17:29Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:17:36Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:17:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:17:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:17:37Z] Cycle 256 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_256.json
+[2026-07-01T14:17:37Z] cycle exit=0; sleep 180s
+[2026-07-01T14:20:37Z] HEA forge cycle
+[2026-07-01T14:20:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:20:41Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:20:42Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:20:43Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:20:43Z] Cycle 257 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_257.json
+[2026-07-01T14:20:43Z] cycle exit=0; sleep 180s
+[2026-07-01T14:23:43Z] HEA forge cycle
+[2026-07-01T14:23:43Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:23:47Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:23:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:23:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:23:48Z] Cycle 258 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_258.json
+[2026-07-01T14:23:48Z] cycle exit=0; sleep 180s
+[2026-07-01T14:26:48Z] HEA forge cycle
+[2026-07-01T14:26:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:26:52Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:26:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:26:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:26:53Z] Cycle 259 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_259.json
+[2026-07-01T14:26:53Z] cycle exit=0; sleep 180s
+[2026-07-01T14:29:53Z] HEA forge cycle
+[2026-07-01T14:29:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:29:59Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:30:00Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:30:00Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:30:00Z] Cycle 260 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_260.json
+[2026-07-01T14:30:00Z] cycle exit=0; sleep 180s
+[2026-07-01T14:33:01Z] HEA forge cycle
+[2026-07-01T14:33:01Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:33:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:33:07Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:33:07Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:33:08Z] Cycle 261 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_261.json
+[2026-07-01T14:33:08Z] cycle exit=0; sleep 180s
+[2026-07-01T14:36:08Z] HEA forge cycle
+[2026-07-01T14:36:08Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:36:11Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:36:12Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:36:12Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:36:13Z] Cycle 262 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_262.json
+[2026-07-01T14:36:13Z] cycle exit=0; sleep 180s
+[2026-07-01T14:39:13Z] HEA forge cycle
+[2026-07-01T14:39:13Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:39:17Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:39:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:39:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:39:18Z] Cycle 263 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_263.json
+[2026-07-01T14:39:18Z] cycle exit=0; sleep 180s
+[2026-07-01T14:42:18Z] HEA forge cycle
+[2026-07-01T14:42:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:42:21Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:42:22Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:42:22Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:42:23Z] Cycle 264 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_264.json
+[2026-07-01T14:42:23Z] cycle exit=0; sleep 180s
+[2026-07-01T14:45:23Z] HEA forge cycle
+[2026-07-01T14:45:23Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:45:25Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:45:26Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:45:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:45:27Z] Cycle 265 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_265.json
+[2026-07-01T14:45:27Z] cycle exit=0; sleep 180s
+[2026-07-01T14:48:27Z] HEA forge cycle
+[2026-07-01T14:48:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:48:29Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:48:30Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:48:31Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:48:31Z] Cycle 266 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_266.json
+[2026-07-01T14:48:31Z] cycle exit=0; sleep 180s
+[2026-07-01T14:51:31Z] HEA forge cycle
+[2026-07-01T14:51:31Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:51:40Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:51:43Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:51:44Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:51:45Z] Cycle 267 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_267.json
+[2026-07-01T14:51:45Z] cycle exit=0; sleep 180s
+[2026-07-01T14:54:45Z] HEA forge cycle
+[2026-07-01T14:54:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:54:54Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:54:57Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:54:57Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:54:58Z] Cycle 268 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_268.json
+[2026-07-01T14:54:58Z] cycle exit=0; sleep 180s
+[2026-07-01T14:57:58Z] HEA forge cycle
+[2026-07-01T14:57:58Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:58:01Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T14:58:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:58:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T14:58:02Z] Cycle 269 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_269.json
+[2026-07-01T14:58:02Z] cycle exit=0; sleep 180s
+[2026-07-01T15:01:02Z] HEA forge cycle
+[2026-07-01T15:01:02Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:01:18Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:01:23Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:01:26Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:01:26Z] Cycle 270 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_270.json
+[2026-07-01T15:01:26Z] cycle exit=0; sleep 180s
+[2026-07-01T15:04:27Z] HEA forge cycle
+[2026-07-01T15:04:27Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:04:30Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:04:32Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:04:33Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:04:33Z] Cycle 271 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_271.json
+[2026-07-01T15:04:33Z] cycle exit=0; sleep 180s
+[2026-07-01T15:07:33Z] HEA forge cycle
+[2026-07-01T15:07:33Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:07:37Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:07:43Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:07:44Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:07:45Z] Cycle 272 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_272.json
+[2026-07-01T15:07:45Z] cycle exit=0; sleep 180s
+[2026-07-01T15:10:45Z] HEA forge cycle
+[2026-07-01T15:10:45Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:10:47Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:10:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:10:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:10:48Z] Cycle 273 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_273.json
+[2026-07-01T15:10:48Z] cycle exit=0; sleep 180s
+[2026-07-01T15:13:48Z] HEA forge cycle
+[2026-07-01T15:13:48Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:13:51Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:13:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:13:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:13:53Z] Cycle 274 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_274.json
+[2026-07-01T15:13:53Z] cycle exit=0; sleep 180s
+[2026-07-01T15:16:53Z] HEA forge cycle
+[2026-07-01T15:16:53Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_thermo_anneal.py --steps 50000 --out /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:16:56Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_cstar_closure.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716 --c-star /Users/shanyu/Foliation-Engine/out/chip/hea_thermo_full.json
+[2026-07-01T15:16:58Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Foliation-Engine/tools/chip_hea_emergence_bootstrap.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:16:58Z] >> /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/shanyu/Desktop/foliation-pass-v1/scripts/abinitio_pipeline/postprocess_hea_emergence.py --run /Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/hea_20260615_052716
+[2026-07-01T15:16:58Z] Cycle 275 complete → /Users/shanyu/Library/Mobile Documents/com~apple~CloudDocs/Foliation-Engine-Archive/out/chip/crystal_forge/cycle_275.json
+[2026-07-01T15:16:58Z] cycle exit=0; sleep 180s

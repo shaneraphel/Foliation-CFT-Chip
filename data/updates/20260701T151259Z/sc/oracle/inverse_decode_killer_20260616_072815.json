@@ -1,0 +1,190 @@
+{
+  "schema": "foliation.inverse_decode.v1",
+  "deterministic": true,
+  "run_id": "killer_20260616_072815",
+  "formula_input": "TaSe2",
+  "theta_star_ref": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/abinitio/runs/killer_20260616_072815",
+  "J_BKT_blueprint": 0.24488311966517684,
+  "j_threshold": 0.05,
+  "decoded": {
+    "host_tm": "Ta",
+    "ligand": "Se",
+    "dopant_hint": null,
+    "confidence": "formula_anchor",
+    "constraints_satisfied": [
+      "E_k band",
+      "V_k overlap",
+      "U window"
+    ],
+    "pair_ranking": {
+      "best_pair": {
+        "tm": "Ta",
+        "ligand": "Se",
+        "E_pred_eV": 2.2924999999999995,
+        "V_pred_eV": 0.0036752372335874784,
+        "E_bath_hits": 3,
+        "V_bath_hits": 1,
+        "E_band_err_eV": 2.5813200274401877,
+        "V_band_err_eV": 1.8636741591052866,
+        "U_penalty": 0.0,
+        "total_L1": 84.44499418654547
+      },
+      "candidates": [
+        {
+          "tm": "Ta",
+          "ligand": "Se",
+          "E_pred_eV": 2.2924999999999995,
+          "V_pred_eV": 0.0036752372335874784,
+          "E_bath_hits": 3,
+          "V_bath_hits": 1,
+          "E_band_err_eV": 2.5813200274401877,
+          "V_band_err_eV": 1.8636741591052866,
+          "U_penalty": 0.0,
+          "total_L1": 84.44499418654547
+        }
+      ],
+      "confidence": "formula_anchor",
+      "formula_anchor": {
+        "host_tm": "Ta",
+        "ligand": "Se"
+      }
+    }
+  },
+  "doping": {
+    "x_theory": 0.0,
+    "mu_theta_eV": -1.9410446887232666,
+    "mu_discrete_accepted_eV": -1.9410446887232666
+  },
+  "accepted_recipe": {
+    "try_index": 0,
+    "x_theory": 0.0,
+    "x_discrete": 0.0,
+    "fraction": "0/3",
+    "supercell": "sqrt3xsqrt3",
+    "mu_theta_eV": -1.9410446887232666,
+    "mu_discrete_eV": -1.9410446887232666,
+    "mu_backcalc_mode": "rigid_tensor_phase_2c",
+    "theta_14d_snapped": [
+      3.9290181554970065,
+      -1.9410446887232666,
+      0.11734939633887423,
+      -1.1338365931386805,
+      0.6663139814753554,
+      0.39277750444494164,
+      -0.778082217778987,
+      0.5311450255922355,
+      3.0446214246965195,
+      2.4454697170729665,
+      2.137912388180891,
+      4.148446508946467,
+      2.2687373014518872,
+      5.942950670068583
+    ],
+    "formula": {
+      "formula_pretty": "TaSe2",
+      "formula_subscript": "TaSe2",
+      "supercell": "2x2",
+      "denominator": 1,
+      "numerator": 0,
+      "x_discrete": 0.0,
+      "tm_sites": 4,
+      "dopant_atoms": 0,
+      "host_atoms": 4,
+      "ligand_atoms": 8
+    },
+    "fpu": {
+      "ok": true,
+      "J_BKT": 0.09338776616924171,
+      "L": 0.09338776616924171,
+      "sigma_iwn": -0.8200541086736479,
+      "forge_calls": 3,
+      "theta_evaluated": [
+        3.9290181554970065,
+        -1.9410446887232664,
+        0.11734939633887424,
+        -1.1338365931386805,
+        0.6663139814753554,
+        0.3927775044449416,
+        -0.778082217778987,
+        0.5311450255922355,
+        3.0446214246965195,
+        2.4454697170729665,
+        2.137912388180891,
+        4.148446508946467,
+        2.2687373014518872,
+        5.942950670068583
+      ],
+      "report_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/fpu_recheck/recheck_killer_20260616_072815_0over3.json"
+    },
+    "verdict": "PASS_SYNTHESIS_RECIPE"
+  },
+  "attempts": [
+    {
+      "try_index": 0,
+      "x_theory": 0.0,
+      "x_discrete": 0.0,
+      "fraction": "0/3",
+      "supercell": "sqrt3xsqrt3",
+      "mu_theta_eV": -1.9410446887232666,
+      "mu_discrete_eV": -1.9410446887232666,
+      "mu_backcalc_mode": "rigid_tensor_phase_2c",
+      "theta_14d_snapped": [
+        3.9290181554970065,
+        -1.9410446887232666,
+        0.11734939633887423,
+        -1.1338365931386805,
+        0.6663139814753554,
+        0.39277750444494164,
+        -0.778082217778987,
+        0.5311450255922355,
+        3.0446214246965195,
+        2.4454697170729665,
+        2.137912388180891,
+        4.148446508946467,
+        2.2687373014518872,
+        5.942950670068583
+      ],
+      "formula": {
+        "formula_pretty": "TaSe2",
+        "formula_subscript": "TaSe2",
+        "supercell": "2x2",
+        "denominator": 1,
+        "numerator": 0,
+        "x_discrete": 0.0,
+        "tm_sites": 4,
+        "dopant_atoms": 0,
+        "host_atoms": 4,
+        "ligand_atoms": 8
+      },
+      "fpu": {
+        "ok": true,
+        "J_BKT": 0.09338776616924171,
+        "L": 0.09338776616924171,
+        "sigma_iwn": -0.8200541086736479,
+        "forge_calls": 3,
+        "theta_evaluated": [
+          3.9290181554970065,
+          -1.9410446887232664,
+          0.11734939633887424,
+          -1.1338365931386805,
+          0.6663139814753554,
+          0.3927775044449416,
+          -0.778082217778987,
+          0.5311450255922355,
+          3.0446214246965195,
+          2.4454697170729665,
+          2.137912388180891,
+          4.148446508946467,
+          2.2687373014518872,
+          5.942950670068583
+        ],
+        "report_path": "/Users/shanyu/Desktop/foliation-pass-v1/artifacts/oracle/fpu_recheck/recheck_killer_20260616_072815_0over3.json"
+      },
+      "verdict": "PASS_SYNTHESIS_RECIPE"
+    }
+  ],
+  "verdict": "PASS_SYNTHESIS_RECIPE",
+  "candidate_formulas": [
+    "TaSe2"
+  ]
+}
